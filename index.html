@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Horaires/Résultats YCÔNE septembre 2026 </title>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=0.8, minimum-scale=0.6, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.6, maximum-scale=3.0, user-scalable=yes, viewport-fit=cover" />    
+    <meta name="author" content="erikpier"> 
+  <style>
+    /* Désactive les calculs de padding/border en dehors de la largeur définie */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  /* --- STICKY GÉOMÉTRIE PARFAITE --- */
+  :root {
+    --line1-height: 32px; /* Ajustez selon la hauteur réelle de votre ligne 1 */
+
+    --bg-header-1: #1b13b0;  /* Couleur de fond de la 1ère ligne d'en-tête */
+    --bg-header-2: #254e75;
+    --bg-sticky-1:var(--bg-header-1) /* Couleur du texte de la 2ème ligne d'en-tête */
+    --bg-3: #eed2ee;  /* Couleur de fond de la 2ème ligne d'en-tête */
+    --text-header-1: #ffffff;/* Couleur du texte de la 1ère ligne d'en-tête */
+    --col1-width: 165px;
+    --col2-width: 65px;
+    --col3-width: 50px; 
+    --col2-left: 230px;  /* Égal à --col1-width */           
+
+    --bg-fond:darkslategray;
+    --texte1:#f5c60aed;
+    --texte2:#d7c98d;
+    --texte3:#f3cece;
+    --texte4: yellow;
+    --lien:#42a9ed;
+    --titre:#0b4f8a;
+  
+    --table:#ffffff;
+    --entete:#d8eaf8;
+    --entete-texte:#222;     
+    
+    --ligne1:#252a30;
+    --ligne2:#4a525d;
+    --survol:#308f5ff2;
+    
+    --border1:#b9c6d2;
+    --border2: 2px solid #b9c6d2;
+    --border3: 3px solid #b9c6d2;
+    
+    --ombre:0 2px 8px rgba(0,0,0,.12);  
+  }
+  
+  html, body {
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family:Segoe UI, Arial, Helvetica, sans-serif; 
+    /* Autorise tous les gestes natifs du navigateur (zoom + scroll) */
+    touch-action: manipulation !important; 
+    background:var(--bg-fond);
+    font-size: 13px;
+  }
+  
+  /* Figer le titre h1 en haut */
+  h1 {
+    background: var(--bg-fond); /* Fond pour éviter la transparence */        
+    position: sticky;
+    flex-shrink: 0;     /* Empêche les titres de se réduire si la fenêtre est petite */
+    margin: 0 0 6px 0; 
+    font-size: 1.5rem;
+    color:var(--texte1); 
+    z-index: 10;
+  }    
+  
+  h2 { margin: 0 0 12px 0; font-size: 1.1rem; color:var(--texte2); } 
+  
+  /* 1. LE CONTENEUR AVEC EFFET MAISON (Pour le fun) */
+  .table-container {
+    width: 100%;
+    overflow: auto !important; /* Déclenche les défilements H/V */
+    max-height: 65vh; /* Garde de l'espace sur mobile pour défiler la page globale */
+    flex-grow: 1;       /* Remplit tout l'espace vertical disponible */
+    /*border: 1px solid var(--bordure);*/
+    /* Active le défilement matériel fluide tactile */
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-x pan-y pinch-zoom !important; 
+    /* --- OPTIMISATION FLUIDITÉ / ACCÉLÉRATION MATÉRIELLE --- */
+    -webkit-overflow-scrolling: touch;
+    will-change: scroll-position; /* Prépare le navigateur au défilement */
+    transform: translateZ(0);     /* Force le rendu par la carte graphique (GPU) */   
+  }
+  
+  table {
+    border-collapse: separate; /* Obligatoire pour éviter les bugs de borders sticky */
+    border-spacing: 0;
+    /* Correction des bordures extérieures pour le mode 'separate' */
+    border-top: 1px solid var(--border1);
+    border-left: 1px solid var(--border);
+    /* INDISPENSABLE pour les colonnes variables : la table s'adapte à son contenu */
+    width: max-content;
+    min-width: 900px !important;
+    margin-bottom: 15px !important; /* Crée l'espace de décalage en bas du tableau */ 
+  }
+  
+  th, td {
+    box-sizing: border-box !important;
+    padding: 7px 10px;
+    border-right: 1px solid var(--border1);
+    border-bottom: 1px solid var(--border1);
+    /* background-color: #efd2ee;  Indispensable pour éviter la transparence au défilement */
+    white-space: nowrap; /* Empêche le texte de sauter à la ligne involontairement */
+    color: var(--texte3);
+    font-weight: 500;    
+  }
+  th.dynamic-col a {
+    color: var(--text-header-1);
+    /* display: block; */     /* Rend toute la zone rectangulaire cliquable */
+    /* width: 100%;   */      /* Étire le lien sur les 5 colonnes */
+    /* height: 100%; */
+    /* text-align: center; */ /* Aligne le texte au milieu si nécessaire */
+  }
+  
+  /* Ligne 1 */ 
+  .sticky-row-1 th {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    /*background-color: var(--bg-header-1);*/
+    color: var(--text-header-1);
+    font-weight: 500;
+    
+  }
+  .sticky-row-1 th.sticky-parent {
+    left: 0;
+    z-index: 30;
+    background-color: var(--bg-header-1);    
+  }
+
+  /* Ligne 2 */
+  .sticky-row-2 th {
+    position: sticky;
+    top: var(--line1-height);
+    z-index: 10;
+    background-color: var(--bg-header-2); 
+    color: var(--text-header-1);
+    font-weight: 500;
+  }
+  
+  /* CONFIGURATION STRICTE DES 3 PREMIÈRES COLONNES (En-tête et Corps) */
+  .col-1, tbody td:nth-child(1) {
+    position: sticky; left: 0;
+    background: fixed; /* Assure que le fond reste fixe lors du défilement */
+    width: var(--col1-width);
+    min-width: var(--col1-width);
+    max-width: var(--col1-width);
+  }
+  .col-2, tbody td:nth-child(2) {
+    position: sticky; left: 165px;
+    width: var(--col2-width);
+    min-width: var(--col2-width);
+    max-width: var(--col2-width);
+  }
+  
+  .col-3, tbody td:nth-child(3) {
+    position: sticky !important;
+    /*left: 231px;*/
+    left: var(--col2-left) !important;
+    /*width: auto;*/
+    width: var(--col3-width);
+    min-width: var(--col3-width);
+    max-width: var(--col3-width);
+    /*border-right: 1px solid var(--border1);*/
+  } 
+  
+  /* Gestion fine des z-index pour éviter les superpositions bizarres */
+  .sticky-row-1 .col-1, .sticky-row-1 .col-2, .sticky-row-1 .col-3 { z-index: 30; background: var(--bg-header-1);color: var(--text-header-1); }
+  .sticky-row-2 .col-1, .sticky-row-2 .col-2, .sticky-row-2 .col-3 { z-index: 25; background: var(--bg-header-1);color: var(--text-header-1); }
+  tbody td:nth-child(1), tbody td:nth-child(2), tbody td:nth-child(3) { z-index: 5; background: var(--bg-header-1);color: var(--text-header-1); }
+  
+  /* Style des colonnes variables défilantes */
+  .dynamic-col {
+    min-width: 150px; /* Largeur par défaut pour chaque colonne dynamique */
+    background-color: var(--bg-header-2); /* Couleur de fond pour les colonnes défilantes */
+    border-right: var(--border3);
+    
+    }
+    
+/* --- 1. ALTERNANCE DE COULEUR (À partir de la 4ème colonne) --- */
+/* Lignes impaires */
+  tbody tr:nth-child(odd) td:not(:nth-child(-n+3)) {
+    background: var(--ligne1);
+  }
+  
+  /* Lignes paires */
+  tbody tr:nth-child(even) td:not(:nth-child(-n+3)) {
+    background: var(--ligne2);
+  }
+
+  /* --- 2. EFFET DE SURVOL (HOVER) --- */
+  tbody tr:hover td:not(:nth-child(-n+3)) {
+    background-color: var(--survol) !important;
+    color: var(--texte4);
+    transition: background-color 0.15s ease;
+    cursor: pointer;
+  }
+
+  /* --- 7. ADAPTATION ORDINATEUR (ECRANS DE PC) --- */
+    @media screen and (min-width: 769px) {
+  html, body {
+    height: 100vh;
+    overflow: hidden; /* Supprime l'ascenseur de la page web globale sur PC */
+    display: flex;
+    flex-direction: column;
+    }
+  .table-container {
+    flex-grow: 1;
+    max-height: none; /* Le tableau prend tout le reste de l'écran */
+    }
+  }
+    @page {
+      size: landscape;
+    width: 100%;
+    }
+    @media screen and (orientation: portrait) {
+      #toolbar {
+    width: 100%;
+  }      
+    }
+    @media screen and (orientation: landscape) {
+      #toolbar{
+        min-height: 100%;
+    width: 100%;
+  }  
+    }
+/* --- ADAPTATION SMARTPHONE EN MODE PAYSAGE --- */
+  @media screen and (max-height: 500px) and (orientation: landscape) {
+  
+  .table-container {
+    /* On réduit la hauteur max pour laisser respirer le bas de la page */
+    max-height: 65vh !important; 
+    margin-bottom: 15px !important; /* Marge externe sous le conteneur */
+    }
+
+  /* Espace d'aisance supplémentaire en bas du body pour le défilement global */
+  body {
+    padding-bottom: 20px !important;
+    }
+  }    
+  /* --- 1. ENTÊTE LIGNE 1 : 7ᵉ ou 8ᵉ cellule (avec colspan) --- *//*
+thead tr:nth-child(1) th:nth-child(7) {
+  color: #0d6efd !important;             /* Couleur du texte (ex: Rouge) *//*
+  font-weight: 800 !important;           /* Épaisseur de police *//*
+  font-size: 1.1rem !important;          /* Taille de police *//*
+  background-color: #a6e3e6 !important;  /* Fond optionnel pour faire ressortir *//*
+}*/
+
+/* --- 2. ENTÊTE LIGNE 2 : Colonnes 21, 22 et 23 --- *//*
+thead tr:nth-child(2) th:nth-child(n+19):nth-child(-n+21) {
+  color: #0d6efd !important;             /* Couleur du texte (ex: Bleu) *//*
+  font-weight: bold !important;
+  font-size: 0.95rem !important;
+  background-color: #a6e3e6 !important;
+} */
+
+/* --- 3. CORPS DE TABLE (tbody) : Colonnes 21, 22 et 23 --- 
+tbody td:nth-child(n+19):nth-child(-n+21) {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  font-size: 1.0rem !important;
+  }
+  */
+
+  /* 1. Encadrement du titre Ligne 1 (colspan="5") */
+  /* Si c'est le 3ème <th> de la ligne 1 */
+thead tr:nth-child(1) th {
+  border-top: var(--border2);
+}    
+thead tr:nth-child(1) th:nth-child(2) {
+  border-left: var(--border2) !important;
+  border-right: var(--border3) !important;
+}
+thead tr:nth-child(1) th:nth-child(3) {
+  border-right: var(--border3) !important;
+}
+
+
+/* 2. Bordure GAUCHE du groupe (Colonne 4) */
+thead tr:nth-child(2) th:nth-child(4),
+tbody tr td:nth-child(4) {
+  border-left: var(--border3) !important;
+}
+
+/* 3. Bordure DROITE du groupe (Colonne 8) */
+thead tr:nth-child(2) th:nth-child(8),
+tbody tr td:nth-child(8) {
+  border-right: var(--border3) !important;
+}
+/* Bordure DROITE (Colonne 13) */
+thead tr:nth-child(2) th:nth-child(13),
+tbody tr td:nth-child(13) {
+  border-right: var(--border3) !important;
+}
+/* Bordure DROITE (Colonne 18) */
+thead tr:nth-child(2) th:nth-child(18),
+tbody tr td:nth-child(18) {
+  border-right: var(--border3) !important;
+}
+/* Bordure DROITE (Colonne 23) */
+thead tr:nth-child(2) th:nth-child(23),
+tbody tr td:nth-child(23) {
+  border-right: var(--border3) !important;
+}
+/* Bordure DROITE (Colonne 28) */
+thead tr:nth-child(2) th:nth-child(28),
+tbody tr td:nth-child(28) {
+  border-right: var(--border3) !important;
+}
+/* Bordure DROITE (Colonne 33) */
+thead tr:nth-child(2) th:nth-child(33),
+tbody tr td:nth-child(33) {
+  border-right: var(--border3) !important;
+}
+/* Bordure DROITE (Colonne 38) */
+thead tr:nth-child(2) th:nth-child(38),
+tbody tr td:nth-child(38) {
+  border-right: var(--border3) !important;
+}
+/* Bordure DROITE (Colonne 43) */
+thead tr:nth-child(2) th:nth-child(38),
+tbody tr td:nth-child(43) {
+  border-right: var(--border3) !important;
+}
+</style>
+</head>
+<body>
+<div id="body">     
+    <h1>Horaires/Résultats YCÔNE 2026  &#8195;</h1>
+    <!--<a style="font-size: 1rem;color:var(--lien);" href="https://www.ofrance2026.fr/fr/pages/resultats.html#r%C3%A9sultats" 
+    target="_blank">Lien Résultats</a> -->
+    <h2>du 01/09/2026 au 30/09/2026</h2>  
+
+<div class="table-container">
+  <table>
+    <thead>
+      <tr class="sticky-row-1">
+        <th colspan="3" class="sticky-parent">Informations clés</th>
+          <th colspan="5" class="dynamic-col">
+          <a href="https://drive.google.com/file/d/1rsiQQXgQLVTRWuBlzRlPZ0U-1UvcdDQs/view?usp=sharing" 
+          target="_blank">MD rég. Nuits(21) 06/09</a></th>
+          <th colspan="5" class="dynamic-col">
+          <a href="https://drive.google.com/file/d/1qn1yX338IorayOL3KMJYmGZYRmOoAY0q/view?usp=sharing" 
+          target="_blank">LD Rég. Curley(21) 13/09</a></th>
+          <th colspan="5" class="dynamic-col">
+          <a href="https://drive.google.com/file/d/1utogAuQwHQ7woPKs4-5L8SolHiTtIZcB/view?usp=sharing" 
+          target="_blank">CO-VTT CDL Sprint Curley(21) 13/09</a></th>
+          <th colspan="5" class="dynamic-col">
+          <a href="https://drive.google.com/file/d/1w9EgJ9REnCdApoE4p2OTHfrTkqIUVHKh/view?usp=sharing" 
+          target="_blank">CDL Sprint Besançon(25) 20/09</a></th>
+          <th colspan="5" class="dynamic-col">
+          <a href="https://drive.google.com/file/d/1xGKkh7nHj81lcsKLRsPG6fvEJjNGKLx9/view?usp=sharing" 
+          target="_blank">MD Urbaine Besançon(25) 20/09</a></th>
+          <th colspan="5" class="dynamic-col">
+          <a href="" 
+          target="_blank">CO-VTT CDL MD Ahuy(21) 26/09</a></th>
+          <th colspan="5" class="dynamic-col">
+          <a href="" 
+          target="_blank">MD Rég. E1 Gissey(21) 27/09</a></th>
+          <th colspan="5" class="dynamic-col">
+          <a href="https://drive.google.com/file/d/11DS-_Nso2dJvG_h6_FU5EQ1PsKO49a31/view?usp=sharing" 
+          target="_blank">CO-VTT CDL Mass Start E2 Gissey(21) 27/09</a></th>
+      </tr>      
+      <!-- Ligne 2 : En-têtes enfants -->
+      <tr class="sticky-row-2">
+        <th class="col-1">Nom</th>
+        <th class="col-2">S.I.</th>
+        <th class="col-3">Cat.</th>
+        <!-- Doit correspondre au nombre de th du dessus -->
+        <th>Circ.</th>
+        <th>Hor.</th>
+        <th>Rés.</th>
+        <th>Pl.</th>
+        <th>écart</th>
+        <th>Circ.</th>
+        <th>Hor.</th>
+        <th>Rés.</th>
+        <th>Pl.</th>
+        <th>écart</th> 
+        <th>Circ.</th>
+        <th>Hor.</th>
+        <th>Rés.</th>
+        <th>Pl.</th>
+        <th>écart</th> 
+        <th>Circ.</th>
+        <th>Hor.</th>
+        <th>Rés.</th>
+        <th>Pl.</th>
+        <th>écart</th> 
+        <th>Circ.</th>
+        <th>Hor.</th>
+        <th>Rés.</th>
+        <th>Pl.</th>
+        <th>écart</th>        
+        <th>Circ.</th>
+        <th>Hor.</th>
+        <th>Rés.</th>
+        <th>Pl.</th>
+        <th>écart</th> 
+        <th>Circ.</th>
+        <th>Hor.</th>
+        <th>Rés.</th>
+        <th>Pl.</th>
+        <th>écart</th>
+        <th>Circ.</th>
+        <th>Hor.</th>
+        <th>Rés.</th>
+        <th>Pl.</th>
+        <th>écart</th> 
+      </tr>
+    </thead>
+    <tbody>
+      <!--
+      <tr>
+        <td colspan="24" scope="rowgroup" style="text-align:center";>YCONE-Sens Dames</td>
+      </tr>-->
+      <tr>
+        <td>BARBIER Patrick</td>
+        <td>8050858</td>
+        <td>H65</td>
+        <td>Violet Moyen</td>
+        <td>10:05</td>
+        <td>:</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>         
+      </tr>
+      <tr>
+        <td>BERNARD Gaëtan</td>
+        <td>8581786</td>
+        <td>H21</td>
+        <td>Noir</td>
+        <td>09:34</td>
+        <td>:</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td> 
+      </tr>
+      <tr>
+        <td>BRUNEL Marie-Jo</td>
+        <td>8545607</td>
+        <td>D70</td>
+        <td>Violet Court</td>
+        <td>09:49</td>
+        <td>:</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>COUESNON Pascal</td>
+        <td>1890311</td>
+        <td>H65</td>
+        <td>Violet Court</td>
+        <td>10:03</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td> 
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>LOUAT Aimé</td>
+        <td>8890303</td>
+        <td>H75</td>
+        <td>Violet Court</td>
+        <td>09:35</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>         
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr> 
+        <td>MAGNY Eric</td>
+        <td>1890308</td>
+        <td>H65</td>
+        <td>Violet Moyen</td>
+        <td>09:41</td>
+        <td>:</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td> 
+      </tr>
+      <tr>
+        <td>MOINE Emeline</td>
+        <td>8890301</td>
+        <td>D21</td>
+        <td>Violet Long</td>
+        <td>09:46</td>
+        <td>:</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td> 
+      </tr>
+      <tr> 
+        <td>MOINE Francis</td>
+        <td>8280173</td>
+        <td>H50</td>
+        <td>Violet Long</td>
+        <td>09:54</td>
+        <td>:</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>C</td>
+        <td>:</td>
+        <td>:</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td> 
+      </tr>
+      <tr>
+        <td>PIERRE Eric</td>
+        <td>8005961</td>
+        <td>H65</td>
+        <td>Violet Long</td>
+        <td>09:38</td>
+        <td>:</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Violet Long</td>
+        <td>:</td>
+        <td>:</td>
+        <td>-</td>
+        <td>-</td>         
+        <td>D</td>
+        <td>:</td>
+        <td>:</td>
+        <td>-</td>
+        <td>-</td>
+        <td>E</td>
+        <td>:</td>
+        <td>:</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>STEWARD Madeleine</td>
+        <td>1890304</td>
+        <td>D50</td>
+        <td>Violet Moyen</td>
+        <td>09:49</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      <tr>
+        <td></td>
+        <td></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>PAM</td>
+        <td>7590114</td>
+        <td>D65</td>
+        <td>09:49</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>      
+  </tbody>
+  </table>
+</div>
+</body>
+</html>
