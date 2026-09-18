@@ -6,7 +6,7 @@
     <!--<meta name="viewport" content="width=device-width, initial-scale=0.8, minimum-scale=0.6, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.6, maximum-scale=3.0, user-scalable=yes, viewport-fit=cover" />    
     <meta name="author" content="erikpier"> 
-  
+    <link rel="stylesheet" href="https://cloudflare.com">
 <style>
       /* Désactive les calculs de padding/border en dehors de la largeur définie */
   *, *::before, *::after {
@@ -36,6 +36,8 @@
     --texte4: yellow;
     --texte5: #b7ff00;
     --texte6: #351c1c;
+    --texte7:var(--bg-header-1);
+    --texte8:var(--lien1);
     --lien:#42a9ed;
     --lien1:#a8d6f5;
     --titre:#0b4f8a;
@@ -220,7 +222,7 @@
     background-color: var(--survol) !important;
     color: var(--texte4);
     transition: background-color 0.15s ease;
-    cursor: pointer;
+    cursor: pointer;    
   }
 
   /* --- STYLISATION DES COLONNES DE CHOIX --- */
@@ -434,6 +436,22 @@ table td a, table th a:hover {
   background-color: var(--bg-fond3); /* Devient un peu plus clair au survol */
   text-decoration: underline; 
 }
+
+/* CSS */
+.lien {
+  text-decoration: none;
+  padding: 3px 5px; /* Optionnel : ajoute un espace autour du texte */
+  transition: background-color 0.2s ease; /* Optionnel : rend l'apparition fluide */
+  color: var(--texte8);  /*Applique un fond bleu très léger (adapté à votre variable --lien) */
+}
+
+/* Changement de fond au survol */
+.lien:hover {
+  background-color: var(--bg-fond3); 
+  text-decoration: underline;
+  color:var(--texte7) !important;
+}
+
 </style>
 </head>
 <body>
@@ -442,11 +460,12 @@ table td a, table th a:hover {
     <!--<a style="font-size: 1rem;color:var(--lien);" href="https://www.ofrance2026.fr/fr/pages/resultats.html#r%C3%A9sultats" 
     target="_blank">Lien Résultats</a> -->
     <h2>du 01/09/2026 au 31/12/2026 &#8195&#8195&#8195&#8195&#8195&#8195 Lien : 
-      <a style="color:var(--lien);" href="https://erikpier2.github.io/ycone_2026/" target="_blank"><i>HISTORIQUE</i></a>
-      <span>&#8195&#8195&#8195&#8195&#8195&#8195</span>
-      <a style="color:var(--lien);" href="https://erikpier2.github.io/ycone_resultats_08/" target="_blank"><i>#</i></a>    
+      <a class="lien" href="https://erikpier2.github.io/ycone_2026/" target="_blank"><i>HISTORIQUE</i></a>
+      <span>&#8195&#8195&#8195&#8195&#8195&#8195</span>Calendrier de la Ligue :
+      <a class="lien" href="https://docs.google.com/spreadsheets/d/1httJl1hiOHUBR7Vo0rlS1slkQXeuAh_5/edit?gid=91997828#gid=91997828" 
+      target="_blank"><i>LBFCO</i></a>    
     </h2>
-<div id="loading">Chargement des données...</div>      
+<div id="loading">...</div>      
       <!-- C'est cette div qui portera vos barres de défilement et vos limites de hauteur -->
 <div id="excel-table-container" class="table-container"></div>  
 <!-- Moteur d'analyse ultra-léger et autonome intégré directement dans la page -->
@@ -482,8 +501,8 @@ table td a, table th a:hover {
         "NSE LD Meyrargues(13) 4/10": "https://nse2026.paca-co.fr/wp-content/uploads/2026/08/Annonce-de-course-CO-a-pied-Nationale-Meyrargues-v1.3.pdf",
         "5.Hor.": "https://drive.google.com/file/d/1gSADKHldz-gQYPpNh3Eq9G2Ak8Beizbg/view?usp=sharing",
         "5.Pl.": "https://drive.google.com/file/d/16cLWkwcTtlaLIJR4OGbN2Nu5FCKUweiS/view?usp=sharing",
-        "": "",
-        "": "",
+        "7.écart": "https://drive.google.com/file/d/1q92MEE9nQkqpBMbQy0iCi3545z-zx-dT/view?usp=sharing",
+        "7.Rés.": "https://oresults.eu/events/3831",
         "": "",
         "": "",
         "": "",
@@ -726,6 +745,6 @@ table td a, table th a:hover {
 </script>
 </div>
 </div>  
-<p style=" color :#e0dada ">Tableau des horaires et résultats mis à jour le 16/09/2026 24:10</p>
+<p style=" color :#e0dada ">Tableau des horaires et résultats mis à jour le 18/09/2026 08:27</p>
 </body>
 </html>
