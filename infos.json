@@ -1,0 +1,70 @@
+{
+  "groupe1": {
+    "titre": "LD Nemours (77) – 4 octobre",
+    "textes": [
+      "Informations concernant la course de Nemours.",
+      "Les horaires, résultats et documents disponibles sont accessibles dans les colonnes du tableau."
+    ],
+    "liens": [
+      {
+        "texte": "Informations / annonce de course",
+        "url": "https://drive.google.com/file/d/1QrOnt-HcuTtvGSR5_7xQkPmd7BuNOapq/view?usp=sharing"
+      }
+    ],
+    "maj": "03/10/2026"
+  },
+
+  "groupe2": {
+    "titre": "NSE Sprint Lambesc (13) – 3 octobre",
+    "textes": [
+      "Course nationale Sprint.",
+      "Les différents documents et liens disponibles sont regroupés ici."
+    ],
+    "liens": [
+      {
+        "texte": "Annonce de course",
+        "url": "https://nse2026.paca-co.fr/wp-content/uploads/2026/09/Annonce-de-course-CO-a-pied-Nationale-LAMBESC-v1.5.pdf"
+      },
+      {
+        "texte": "Horaires de départ",
+        "url": "https://nse2026.paca-co.fr/wp-content/uploads/2026/09/Horaires-de-depart-par-club-sprint-Lambesc.html"
+      },
+      {
+        "texte": "Horaires par catégorie",
+        "url": "https://nse2026.paca-co.fr/wp-content/uploads/2026/09/Horaires-de-depart-par-categorie-sprint-Lambesc.html"
+      },
+      {
+        "texte": "Consignes de course",
+        "url": "https://nse2026.paca-co.fr/wp-content/uploads/2026/09/Nationale-SE-2026-SPRINT-consignes-de-course.pdf"
+      }
+    ],
+    "maj": "03/10/2026"
+  },
+
+  "groupe3": {
+    "titre": "LD Meyrargues (13) – 4 octobre",
+    "textes": [
+      "Course nationale longue distance.",
+      "Les informations concernant cette épreuve sont regroupées dans cette fenêtre."
+    ],
+    "liens": [
+      {
+        "texte": "Annonce de course",
+        "url": "https://nse2026.paca-co.fr/wp-content/uploads/2026/08/Annonce-de-course-CO-a-pied-Nationale-Meyrargues-v1.3.pdf"
+      },
+      {
+        "texte": "Horaires de départ",
+        "url": "https://nse2026.paca-co.fr/wp-content/uploads/2026/09/Horaires-de-depart-par-club-LD-Meyrargues-v2.html"
+      },
+      {
+        "texte": "Horaires par catégorie",
+        "url": "https://nse2026.paca-co.fr/wp-content/uploads/2026/09/Horaires-de-depart-par-categorie-LD-Meyrargues-v2.html"
+      },
+      {
+        "texte": "Consignes de course",
+        "url": "https://nse2026.paca-co.fr/wp-content/uploads/2026/09/Nationale-LD-Meyrargues-Consignes-de-course-Bulletin-2.pdf"
+      }
+    ],
+    "maj": "03/10/2026"
+  }
+}
