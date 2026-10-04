@@ -66,5 +66,60 @@
       }
     ],
     "maj": "04/10/2026 18:47"
+  },
+
+    "groupe4": {
+    "titre": "Sprint R. Quetigny(21) 10/10",
+    "textes": [
+      "Course régionale Sprint à Quetigny(21)",
+      "Cette épreuve comptant pour la Coupe de Ligue(cdlp) est l'étape 12."
+    ],
+    "liens": [
+      {
+        "texte": "Annonce",
+        "url": "https://drive.google.com/file/d/1AGCc6prWtvzRJWoXNc-l1V4T1g1IDAZt/view?usp=sharing"
+      },
+      {
+        "texte": "",        
+        "url": " "
+      },
+      {
+        "texte": "",
+        "url": " "
+      },
+      {
+        "texte": "Consignes de course",
+        "url": "https://drive.google.com/file/d/1S9cMOEykbylkeC_OsuguBag1RywI82P6/view?usp=drivesdk"
+      }
+    ],
+    "maj": "04/10/2026 19:51"
+  },
+
+  "groupe5": {
+    "titre": "LD Fontainebleau(77) 11/10",
+    "textes": [
+      "Course régionale Longue Distance à Fontainebleau(77), 'la vallée des chatons'",
+      "IMPORTANT: ==> Prendre son horaire à l'avance.",
+      ""
+    ],
+    "liens": [
+      {
+        "texte": "Annonce",
+        "url": "https://drive.google.com/file/d/1_A_gRsILoPcEk75u7kgxuagqv87XJruI/view?usp=sharing"
+      },
+      {
+        "texte": "Google Form pour prise horaires",        
+        "url": "https://docs.google.com/spreadsheets/d/1_buiQC9nuaOD565CCXMM1qWBLu9UND8eTbGLa9zM3LE/edit?gid=0#gid=0"
+      },
+      {
+        "texte": "Liste de départs",
+        "url": " "
+      },
+      {
+        "texte": "Consignes de course",
+        "url": "https://drive.google.com/file/d/1S9cMOEykbylkeC_OsuguBag1RywI82P6/view?usp=drivesdk"
+      }
+    ],
+    "maj": "04/10/2026 19:51"
   }
 }
