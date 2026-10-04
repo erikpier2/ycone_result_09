@@ -22,8 +22,8 @@
     ],
     "liens": [
       {
-        "texte": "Annonce de course",
-        "url": "https://nse2026.paca-co.fr/wp-content/uploads/2026/09/Annonce-de-course-CO-a-pied-Nationale-LAMBESC-v1.5.pdf"
+        "texte": "Résultats Sprint (NSE)",
+        "url": "https://heyries.alwaysdata.net/competition/1/"
       },
       {
         "texte": "Horaires de départ",
@@ -44,13 +44,13 @@
   "groupe3": {
     "titre": "LD Meyrargues (13) – 4 octobre",
     "textes": [
-      "Course nationale longue distance.",
+      "Course nationale Longue Distance (NSE)",
       "Les informations concernant cette épreuve sont regroupées dans cette fenêtre."
     ],
     "liens": [
       {
-        "texte": "Annonce de course",
-        "url": "https://nse2026.paca-co.fr/wp-content/uploads/2026/08/Annonce-de-course-CO-a-pied-Nationale-Meyrargues-v1.3.pdf"
+        "texte": "Résultats Nationale LD",
+        "url": "https://heyries.alwaysdata.net/competition/2/"
       },
       {
         "texte": "Horaires de départ",
@@ -65,6 +65,6 @@
         "url": "https://nse2026.paca-co.fr/wp-content/uploads/2026/09/Nationale-LD-Meyrargues-Consignes-de-course-Bulletin-2.pdf"
       }
     ],
-    "maj": "03/10/2026"
+    "maj": "04/10/2026 18:47"
   }
 }
