@@ -7,11 +7,15 @@
     ],
     "liens": [
       {
-        "texte": "Informations / annonce de course",
+        "texte": "Résultats Circuits",
+        "url": "https://drive.google.com/file/d/164nk25AF2wsfYGwdS0gv3WiwmrRX-0Lp/view?usp=sharing"
+      },
+      {
+        "texte": "Annonce",
         "url": "https://drive.google.com/file/d/1QrOnt-HcuTtvGSR5_7xQkPmd7BuNOapq/view?usp=sharing"
       }
     ],
-    "maj": "03/10/2026"
+    "maj": "04/10/2026 09:18"
   },
 
   "groupe2": {
@@ -104,22 +108,14 @@
     ],
     "liens": [
       {
-        "texte": "Résultats Circuits",        
-        "url": "https://drive.google.com/file/d/164nk25AF2wsfYGwdS0gv3WiwmrRX-0Lp/view?usp=sharing"
+        "texte": "Choix Horaires",        
+        "url": "https://docs.google.com/spreadsheets/d/1_buiQC9nuaOD565CCXMM1qWBLu9UND8eTbGLa9zM3LE/edit?gid=0#gid=0"
       },
       {
         "texte": "Annonce",
         "url": "https://drive.google.com/file/d/1_A_gRsILoPcEk75u7kgxuagqv87XJruI/view?usp=sharing"
-      },
-      {
-        "texte": "Liste de départs",
-        "url": " "
-      },
-      {
-        "texte": "Consignes de course",
-        "url": "https://drive.google.com/file/d/1S9cMOEykbylkeC_OsuguBag1RywI82P6/view?usp=drivesdk"
       }
     ],
-    "maj": "04/10/2026 19:51"
+    "maj": "05/10/2026 09;22"
   }
 }
