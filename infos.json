@@ -115,8 +115,7 @@
         "url": "https://drive.google.com/file/d/1_A_gRsILoPcEk75u7kgxuagqv87XJruI/view?usp=sharing"
       }
     ],
-    "maj": "06/10/2026 05:22" ,
-    "info-maj": "Résultats provisoires - <span style=\"color:red;\">Attention : contrôle en cours</span>"  
+    "maj": "06/10/2026 05:22"     
   },
   "groupe6": {
     "titre": "Sprint Avallon(89) 17/10 ",
@@ -155,5 +154,231 @@
       }
     ],
     "maj": "06/10/2026 05:22"
+  },
+    "groupe8": {
+    "titre": "MD régionale Col de la République(42) 21/10 ",
+    "textes": [
+      "Moyenne distance "
+    ],
+    "liens": [
+      {
+        "texte": "Annonce",        
+        "url": "https://drive.google.com/file/d/1QQMk4eja6SP1h-yttIh8ubPRTba1Dr4O/view?usp=sharing"
+      },
+      {
+        "texte": "Liveresultats",
+        "url": "https://liveresultat.orientering.se/beta/?lang=fr"
+      }
+    ],
+    "maj": "06/10/2026 23:56"
+  },
+    "groupe9": {
+    "titre": "MD départementale Col de la République(42) 22/10",
+    "textes": [
+      "Moyenne distance "
+    ],
+    "liens": [
+      {
+        "texte": "Annonce",        
+        "url": "https://drive.google.com/file/d/1wKI8gvIWXvrZM54r7w7WbzKpy3kJ8qqz/view?usp=sharing"
+      },
+      {
+        "texte": "Liveresultats",
+        "url": "https://liveresultat.orientering.se/?lang=fr"
+      }
+    ],
+    "maj": "07/10/2026 00:01"
+  },
+    "groupe10": {
+    "titre": "Pélussin City Race (42) 23/10",
+    "textes": [
+      "Le tracé alterne entre le cœur historique de la ville (ruelles pavées, escaliers, passages étroits), quelques zones pavillonaires et des petites zones herbeuses (parc)."
+    ],
+    "liens": [
+      {
+        "texte": "Site WEb",        
+        "url": "https://oe4203.wordpress.com/pelussin-city-race/"
+      },
+      {
+        "texte": "Liveresultats",
+        "url": "https://liveresultat.orientering.se/?lang=fr"
+      }
+    ],
+    "maj": "06/10/2026 05:22"
+  },
+    "groupe11": {
+    "titre": "Sprint Open & Chpt de France Sprint (qualification)",
+    "textes": [
+      ""
+    ],
+    "liens": [
+            {
+        "texte": "Annonce",        
+        "url": "https://drive.google.com/file/d/1Jt1o6CMrg2RLDqH9zVgW4257HQe93Drh/view?usp=sharing"
+      },
+      {
+        "texte": "Site Web",        
+        "url": "https://cne2026.nose42.fr/cf-sprint"
+      },
+      {
+        "texte": "Map's",
+        "url": "https://www.google.com/maps/d/viewer?mid=1hRiSjUk4J13NMz9X6W0627THtVH-Lug&femb=1&ll=45.386339465732036%2C4.461886099999983&z=12"
+      },
+            {
+        "texte": "Fiche de qualifications",        
+        "url": "https://drive.google.com/file/d/1o-k9BNfFR4ZS2PZT7lmaSP6sw6HQG6p-/view?usp=sharing"
+      }
+    ],
+    "maj": "06/10/2026 05:22"
+  },
+    "groupe12": {
+    "titre": "",
+    "textes": [
+      ""
+    ],
+    "liens": [
+      {
+        "texte": "",        
+        "url": ""
+      },
+      {
+        "texte": "",
+        "url": ""
+      }
+    ],
+    "maj": "06/10/2026 05:22"
+  },
+    "groupe13": {
+    "titre": "CNE relais Le Bessat(42) dimanche 25/10",
+    "textes": [
+      ""
+    ],
+    "liens": [
+      {
+        "texte": "Annonce",        
+        "url": "https://drive.google.com/file/d/1JEkuMS6nXbWPMhWs35oQG98tP97LpUQ4/view?usp=sharing"
+      },
+      {
+        "texte": "Site Web",
+        "url": "https://cne2026.nose42.fr/cne"
+      },
+            {
+        "texte": "",        
+        "url": ""
+      },
+            {
+        "texte": "ancienne carte",        
+        "url": "https://drive.google.com/file/d/1UYNTnd6689FtgNLbVwPkC3zKdmf29CZK/view?usp=sharing"
+      }
+    ],
+    "maj": "06/10/2026 05:22"
+  },
+    "groupe14": {
+    "titre": "CNE Chpt de France de Nuit Le Bessat(42) lundi 26/10",
+    "textes": [
+      ""
+    ],
+    "liens": [
+            {
+        "texte": "Annonce",        
+        "url": "https://drive.google.com/file/d/1JS8xQmTSq3uKGppH0TXde1cQWbUuF_W9/view?usp=sharing"
+      },
+      {
+        "texte": "Site Web",        
+        "url": "https://cne2026.nose42.fr/cn-nuit"
+      },
+      {
+        "texte": "Map's",
+        "url": "https://www.google.com/maps/d/viewer?mid=1hRiSjUk4J13NMz9X6W0627THtVH-Lug&femb=1&ll=45.386339465732036%2C4.461886099999983&z=12"
+      }
+    ],
+    "maj": "06/10/2026 05:22"
+  },
+    "groupe15": {
+    "titre": "",
+    "textes": [
+      ""
+    ],
+    "liens": [
+      {
+        "texte": "",        
+        "url": ""
+      },
+      {
+        "texte": "",
+        "url": ""
+      }
+    ],
+    "maj": "06/10/2026 05:22"
+  },
+    "groupe16": {
+    "titre": "",
+    "textes": [
+      ""
+    ],
+    "liens": [
+      {
+        "texte": "",        
+        "url": ""
+      },
+      {
+        "texte": "",
+        "url": ""
+      }
+    ],
+    "maj": "06/10/2026 05:22"
+  },
+    "groupe17": {
+    "titre": " ",
+    "textes": [
+      ""
+    ],
+    "liens": [
+      {
+        "texte": "",        
+        "url": ""
+      },
+      {
+        "texte": "",
+        "url": ""
+      }
+    ],
+    "maj": "06/10/2026 05:22"
+  },
+    "groupe18": {
+    "titre": " ",
+    "textes": [
+      "" 
+    ],
+    "liens": [
+      {
+        "texte": "",        
+        "url": ""
+      },
+      {
+        "texte": "",
+        "url": ""
+      }
+    ],
+    "maj": "06/10/2026 05:22"
+  },
+    "groupe19": {
+    "titre": " ",
+    "textes": [
+      ""
+
+    ],
+    "liens": [
+      {
+        "texte": "",        
+        "url": ""
+      },
+      {
+        "texte": "",
+        "url": ""
+      }
+    ],
+    "maj": "06/10/2026 05:22"
   }
+
 }
