@@ -1,4 +1,4 @@
-9{
+{
   "groupe1": {
     "titre": "LD Nemours (77) – 4 octobre",
     "textes": [
@@ -123,8 +123,8 @@
     "textes": [
       "Course régionale Sprint à Avallon(89)",
       "Etape 13 de la Coupe de Ligue",
-      "Date limite d’inscription : samedi 10 octobre 2026"
-    ],
+      "Limite d'inscription: samedi 10 octobre 2026 à 23h59"     
+        ],
     "liens": [
       {
         "texte": "Annonce",        
@@ -142,7 +142,7 @@
     "textes": [
       "Course nocturne : Championnat de Ligue de Nuit à Avallon(89)",
       "Etape 14 de la Coupe de Ligue",
-      "Date limite d’inscription: samedi 10 octobre 2026"
+      "Limite d'inscription: samedi 10 octobre 2026 à 23h59"
     ],
     "liens": [
       {
