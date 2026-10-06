@@ -117,5 +117,41 @@
       }
     ],
     "maj": "06/10/2026 05;22"
+  },
+  "groupe6": {
+    "titre": "Sprint Avallon(89) 17/10 ",
+    "textes": [
+      "Course régionale Sprint à Avallon(89)",
+      "Etape 13 de la Coupe de Ligue"     
+        ],
+    "liens": [
+      {
+        "texte": "Annonce",        
+        "url": "https://drive.google.com/file/d/1FLz5XkTfCK3YJNzttsfIDcWp4yXR7pg3/view?usp=sharing"
+      },
+      {
+        "texte": "Horaires de départ",
+        "url": ""
+      }
+    ],
+    "maj": "06/10/2026 05;22"
+  },
+  "groupe7": {
+    "titre": "CDL Nuit Avallon(89) 17/10 ",
+    "textes": [
+      "Course nocturne : Championnat de Ligue de Nuit à Avallon(89)",
+      "Etape 14 de la Coupe de Ligue"
+    ],
+    "liens": [
+      {
+        "texte": "Annonce",        
+        "url": "https://drive.google.com/file/d/1Bf6vpJS1ldQwt2r3KCh9taw9fNnX-yIv/view?usp=sharing"
+      },
+      {
+        "texte": "Horaires de départ",
+        "url": ""
+      }
+    ],
+    "maj": "06/10/2026 05;22"
   }
 }
