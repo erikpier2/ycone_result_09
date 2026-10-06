@@ -104,11 +104,10 @@
     "textes": [
       "Course régionale Longue Distance à Fontainebleau(77), 'la vallée des chatons'",
       "IMPORTANT: ==> Prendre son horaire à l'avance.",
-      "attention ! Guilhem FAVE horaire Violet Court ou Violet Très Court ?"
+      "Attention ! Guilhem FAVE horaire Violet Court ou Violet Très Court ?"
     ],
     "liens": [
-      {
-        "texte": "Choix Horaires",        
+      {        "texte": "Choix Horaires",        
         "url": "https://docs.google.com/spreadsheets/d/1_buiQC9nuaOD565CCXMM1qWBLu9UND8eTbGLa9zM3LE/edit?gid=0#gid=0"
       },
       {
@@ -116,7 +115,8 @@
         "url": "https://drive.google.com/file/d/1_A_gRsILoPcEk75u7kgxuagqv87XJruI/view?usp=sharing"
       }
     ],
-    "maj": "06/10/2026 05;22"
+    "maj": "06/10/2026 05:22" ,
+    "info-maj": "Résultats provisoires - <span style=\"color:red;\">Attention : contrôle en cours</span>"  
   },
   "groupe6": {
     "titre": "Sprint Avallon(89) 17/10 ",
@@ -135,7 +135,7 @@
         "url": ""
       }
     ],
-    "maj": "06/10/2026 05;22"
+    "maj": "06/10/2026 05:22"
   },
   "groupe7": {
     "titre": "CDL Nuit Avallon(89) 17/10 ",
@@ -154,6 +154,6 @@
         "url": ""
       }
     ],
-    "maj": "06/10/2026 05;22"
+    "maj": "06/10/2026 05:22"
   }
 }
