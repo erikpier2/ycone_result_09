@@ -113,9 +113,12 @@
       {
         "texte": "Annonce",
         "url": "https://drive.google.com/file/d/1_A_gRsILoPcEk75u7kgxuagqv87XJruI/view?usp=sharing"
+      },
+      {         "texte":"ffco",
+        "url":"https://api.ffcorientation.fr/iframe/courses/104062/"
       }
     ],
-    "maj": "06/10/2026 05:22"     
+    "maj": "08/10/2026 07:22"     
   },
   "groupe6": {
     "titre": "Sprint Avallon(89) 17/10 ",
@@ -132,9 +135,13 @@
       {
         "texte": "Horaires de départ",
         "url": ""
+      },
+      {
+          "texte":"ffco",
+          "url":"https://api.ffcorientation.fr/iframe/courses/103642/"
       }
     ],
-    "maj": "06/10/2026 05:22"
+    "maj": "08/10/2026 07:22"
   },
   "groupe7": {
     "titre": "CDL Nuit Avallon(89) 17/10 ",
@@ -151,9 +158,13 @@
       {
         "texte": "Horaires de départ",
         "url": ""
+      },
+      {
+        "texte":"ffco",
+        "url":"https://api.ffcorientation.fr/iframe/courses/103643/"
       }
     ],
-    "maj": "06/10/2026 05:22"
+    "maj": "08/10/2026 07:22"
   },
     "groupe8": {
     "titre": "MD régionale Col de la République(42) 21/10 ",
@@ -168,9 +179,13 @@
       {
         "texte": "Liveresultats",
         "url": "https://liveresultat.orientering.se/beta/?lang=fr"
+      },
+      {
+        "texte":"ffco",
+        "url":"https://api.ffcorientation.fr/iframe/courses/107022/"
       }
     ],
-    "maj": "06/10/2026 23:56"
+    "maj": "08/10/2026 07:21"
   },
     "groupe9": {
     "titre": "MD départementale Col de la République(42) 22/10",
@@ -185,9 +200,13 @@
       {
         "texte": "Liveresultats",
         "url": "https://liveresultat.orientering.se/?lang=fr"
+      },
+      {
+        "texte":"ffco",
+        "url":"https://api.ffcorientation.fr/iframe/courses/107023/"
       }
     ],
-    "maj": "07/10/2026 00:01"
+    "maj": "07/10/2026 07:31"
   },
     "groupe10": {
     "titre": "Pélussin City Race (42) 23/10",
@@ -196,15 +215,19 @@
     ],
     "liens": [
       {
-        "texte": "Site WEb",        
+        "texte": "Site Web",        
         "url": "https://oe4203.wordpress.com/pelussin-city-race/"
       },
       {
         "texte": "Liveresultats",
         "url": "https://liveresultat.orientering.se/?lang=fr"
+      },
+      {
+        "texte":"ffco",
+        "url":"https://api.ffcorientation.fr/iframe/courses/103151/"
       }
     ],
-    "maj": "06/10/2026 05:22"
+    "maj": "08/10/2026 07:23"
   },
     "groupe11": {
     "titre": "Sprint Open & Chpt de France Sprint (qualification)",
@@ -221,15 +244,23 @@
         "url": "https://cne2026.nose42.fr/cf-sprint"
       },
       {
-        "texte": "Map'S",
+        "texte": "Map's",
         "url": "https://www.google.com/maps/d/viewer?mid=1hRiSjUk4J13NMz9X6W0627THtVH-Lug&femb=1&ll=45.386339465732036%2C4.461886099999983&z=12"
       },
             {
         "texte": "Fiche de qualifications",        
         "url": "https://drive.google.com/file/d/1o-k9BNfFR4ZS2PZT7lmaSP6sw6HQG6p-/view?usp=sharing"
+      },
+      {
+        "texte":"ffco open",
+        "url":"https://api.ffcorientation.fr/iframe/courses/105688/"
+      },
+      {
+        "texte":"ffco Q",        
+        "url":"https://api.ffcorientation.fr/iframe/courses/108825/"
       }
     ],
-    "maj": "07/10/2026 09:39"
+    "maj": "08/10/2026 07:29"
   },
     "groupe12": {
     "titre": "",
@@ -246,7 +277,7 @@
         "url": ""
       }
     ],
-    "maj": "06/10/2026 05:22"
+    "maj": "08/10/2026 07:29"
   },
     "groupe13": {
     "titre": "CNE relais Le Bessat(42) dimanche 25/10",
@@ -263,8 +294,8 @@
         "url": "https://cne2026.nose42.fr/cne"
       },
             {
-        "texte": "",        
-        "url": ""
+        "texte": "ffco",        
+        "url": "https://api.ffcorientation.fr/iframe/courses/105692/"
       },
             {
         "texte": "ancienne carte",        
@@ -290,9 +321,13 @@
       {
         "texte": "Map's",
         "url": "https://www.google.com/maps/d/viewer?mid=1hRiSjUk4J13NMz9X6W0627THtVH-Lug&femb=1&ll=45.386339465732036%2C4.461886099999983&z=12"
-      }
+      },
+      {
+        "texte": "ffco",        
+        "url": "https://api.ffcorientation.fr/iframe/courses/105694/"
+      }      
     ],
-    "maj": "06/10/2026 05:22"
+    "maj": "08/10/2026 07:32"
   },
     "groupe15": {
     "titre": "",
