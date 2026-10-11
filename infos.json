@@ -106,18 +106,18 @@
       "IMPORTANT: ==> Prendre son horaire à l'avance."
     ],
     "liens": [
-      {        "texte": "Choix Horaires",        
-        "url": "https://docs.google.com/spreadsheets/d/1_buiQC9nuaOD565CCXMM1qWBLu9UND8eTbGLa9zM3LE/edit?gid=0#gid=0"
+      {        "texte": "Résultats Circuits",        
+        "url": "https://res.cloudinary.com/hkgivq3wi/image/upload/v1791740064/organisations/resultat_simple69?_a=BAAABnH8"
+      },
+      {         "texte":"Résultats Temps intermédiaires",
+        "url":"https://res.cloudinary.com/hkgivq3wi/image/upload/v1791740064/organisations/resultat_si69?_a=BAAABnH8"
       },
       {
         "texte": "Annonce",
         "url": "https://drive.google.com/file/d/1_A_gRsILoPcEk75u7kgxuagqv87XJruI/view?usp=sharing"
-      },
-      {         "texte":"ffco",
-        "url":"https://api.ffcorientation.fr/iframe/courses/104062/"
       }
     ],
-    "maj": "08/10/2026 07:22"     
+    "maj": "11/10/2026 19:39"     
   },
   "groupe6": {
     "titre": "Sprint Avallon(89) 17/10 ",
