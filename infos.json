@@ -102,8 +102,7 @@
   "groupe5": {
     "titre": "LD Fontainebleau(77) 11/10",
     "textes": [
-      "Course régionale Longue Distance à Fontainebleau(77), 'la vallée des chatons'",
-      "IMPORTANT: ==> Prendre son horaire à l'avance."
+      "Course régionale Longue Distance à Fontainebleau(77), 'la vallée des chatons'"
     ],
     "liens": [
       {        "texte": "Résultats Circuits",        
@@ -133,14 +132,18 @@
       },
       {
         "texte": "Horaires de départ",
-        "url": ""
+        "url": "https://drive.google.com/file/d/1ANJNv8z6RYSa07MYGhVLjRcvKx4E2HAM/view?usp=sharing"
       },
+      {
+        "texte": "Consignes de course",
+        "url": "https://drive.google.com/file/d/1Mxvro-KYAtPEMHjSNOvdo6hhOLtaVdHz/view?usp=sharing"
+      },      
       {
           "texte":"ffco",
           "url":"https://api.ffcorientation.fr/iframe/courses/103642/"
       }
     ],
-    "maj": "08/10/2026 07:22"
+    "maj": "14/10/2026 10:40"
   },
   "groupe7": {
     "titre": "CDL Nuit Avallon(89) 17/10 ",
@@ -156,14 +159,18 @@
       },
       {
         "texte": "Horaires de départ",
-        "url": ""
+        "url": "https://drive.google.com/file/d/1T6QNkoLM0_MdZ_zglgcP1YQZcFRzDO6g/view?usp=sharing"
       },
+      {
+        "texte": "Consignes de course",
+        "url": "https://drive.google.com/file/d/11A-FFYJvez1XcvuZbtU5NbMiAJxV1J92/view?usp=sharing"
+      },      
       {
         "texte":"ffco",
         "url":"https://api.ffcorientation.fr/iframe/courses/103643/"
       }
     ],
-    "maj": "08/10/2026 07:22"
+    "maj": "14/10/2026 10:40"
   },
     "groupe8": {
     "titre": "MD régionale Col de la République(42) 21/10 ",
