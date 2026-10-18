@@ -123,54 +123,54 @@
     "textes": [
       "Course régionale Sprint à Avallon(89)",
       "Etape 13 de la Coupe de Ligue",
-      "Limite d'inscription: samedi 10 octobre 2026 à 23h59"     
+      "Résultats complets à venir"     
         ],
     "liens": [
+      {
+        "texte": "Résultats Circuits",
+        "url": ""
+      },
+      {
+        "texte": "Résultats Temps intermédiaires",
+        "url": ""
+      },      
       {
         "texte": "Annonce",        
         "url": "https://drive.google.com/file/d/1FLz5XkTfCK3YJNzttsfIDcWp4yXR7pg3/view?usp=sharing"
       },
       {
-        "texte": "Horaires de départ",
-        "url": "https://drive.google.com/file/d/1ANJNv8z6RYSa07MYGhVLjRcvKx4E2HAM/view?usp=sharing"
-      },
-      {
-        "texte": "Consignes de course",
-        "url": "https://drive.google.com/file/d/1Mxvro-KYAtPEMHjSNOvdo6hhOLtaVdHz/view?usp=sharing"
-      },      
-      {
           "texte":"ffco",
           "url":"https://api.ffcorientation.fr/iframe/courses/103642/"
       }
     ],
-    "maj": "14/10/2026 10:40"
+    "maj": "18/10/2026 10:00"
   },
   "groupe7": {
     "titre": "CDL Nuit Avallon(89) 17/10 ",
     "textes": [
       "Course nocturne : Championnat de Ligue de Nuit à Avallon(89)",
       "Etape 14 de la Coupe de Ligue",
-      "Limite d'inscription: samedi 10 octobre 2026 à 23h59"
+      "Résultats complets à venir"
     ],
     "liens": [
+      {
+        "texte": "Résultats",
+        "url": ""
+      },
+      {
+        "texte": "Résultats Temps intermédiaires",
+        "url": ""
+      },      
       {
         "texte": "Annonce",        
         "url": "https://drive.google.com/file/d/1Bf6vpJS1ldQwt2r3KCh9taw9fNnX-yIv/view?usp=sharing"
       },
       {
-        "texte": "Horaires de départ",
-        "url": "https://drive.google.com/file/d/1T6QNkoLM0_MdZ_zglgcP1YQZcFRzDO6g/view?usp=sharing"
-      },
-      {
-        "texte": "Consignes de course",
-        "url": "https://drive.google.com/file/d/11A-FFYJvez1XcvuZbtU5NbMiAJxV1J92/view?usp=sharing"
-      },      
-      {
         "texte":"ffco",
         "url":"https://api.ffcorientation.fr/iframe/courses/103643/"
       }
     ],
-    "maj": "14/10/2026 10:40"
+    "maj": "18/10/2026 10:00"
   },
     "groupe8": {
     "titre": "MD régionale Col de la République(42) 21/10 ",

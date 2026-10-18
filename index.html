@@ -659,7 +659,7 @@
         LIENS
         ===================================================== -->
     <h2>
-        &#8195;&#8195;&#8195;&#8195;&#8195;
+        &#8195;&#8195;&#8195;
         Lien :
         <a class="lien"
             href="https://erikpier2.github.io/ycone_2026/"
@@ -667,7 +667,7 @@
             <i>HISTORIQUE</i>
         </a>
         <span>
-            &#8195;&#8195;&#8195;&#8195;&#8195;&#8195;
+            &#8195;&#8195;&#8195;&#8195;&#8195;
         </span>
         Calendrier de la Ligue :
         <a class="lien"
@@ -675,6 +675,21 @@
             target="_blank">
             <i>LBFCO</i>
         </a>
+        <span>
+            &#8195;&#8195;&#8195;&#8195;&#8195;
+        </span>
+
+        <!-- La balise <a> rend tout ce qu'elle contient cliquable -->
+        <a id="lienAgenda" href="#" target="_blank" rel="noopener"
+            title="Consulter l'agenda FFCO"> 
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="32" height="32" style="vertical-align: middle; border: 1px solid #ccc;">
+                <!-- Triangle supérieur gauche (Blanc) -->
+                <polygon points="0,0 100,0 0,100" fill="#FFFFFF" />
+                <!-- Triangle inférieur droit (Orange) -->
+                <polygon points="100,0 100,100 0,100" fill="#EE6600" />
+            </svg>
+        </a>
+        Agenda FFCO
     </h2>
 
     <!-- =====================================================
@@ -725,6 +740,26 @@
     <!-- =====================================================
         JAVASCRIPT
         ===================================================== -->
+    <script>
+        // Date du jour
+        const aujourdHui = new Date();
+
+        // Format yyyy-mm-dd en heure locale
+        const annee = aujourdHui.getFullYear();
+        const mois = String(aujourdHui.getMonth() + 1).padStart(2, '0');
+        const jour = String(aujourdHui.getDate()).padStart(2, '0');
+        const dateDebut = `${annee}-${mois}-${jour}`;
+
+        // Dernier jour de l'année suivante
+        const dateFin = `${annee + 1}-12-31`;
+
+        // Construction du lien
+        const url = 
+        `https://api.ffcorientation.fr/iframe/agenda/liste/?du=${dateDebut}&au=${dateFin}&types=cou&page=1`;
+
+        document.getElementById('lienAgenda').href = url;
+        console.log("Clic détecté sur la balise d'orientation");
+    </script>
     <script>
 
     /* =========================================================
