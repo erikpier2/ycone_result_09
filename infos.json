@@ -123,16 +123,16 @@
     "textes": [
       "Course régionale Sprint à Avallon(89)",
       "Etape 13 de la Coupe de Ligue",
-      "Résultats complets à venir"     
+      ""     
         ],
     "liens": [
       {
         "texte": "Résultats Circuits",
-        "url": ""
+        "url": "https://drive.google.com/file/d/1CG-l-nuBvzM9Wt7-IIxU86SqP886DLh7/view?usp=sharing"
       },
       {
         "texte": "Résultats Temps intermédiaires",
-        "url": ""
+        "url": "https://drive.google.com/file/d/1EUMxAW1gAIfwfoXKkECjoEwJSO343W_9/view?usp=sharing"
       },      
       {
         "texte": "",        
@@ -143,34 +143,38 @@
           "url":"https://drive.google.com/file/d/1FLz5XkTfCK3YJNzttsfIDcWp4yXR7pg3/view?usp=sharing"
       }
     ],
-    "maj": "18/10/2026 10:00"
+    "maj": "18/10/2026 15:44"
   },
   "groupe7": {
     "titre": "CDL Nuit Avallon(89) 17/10 ",
     "textes": [
       "Course nocturne : Championnat de Ligue de Nuit à Avallon(89)",
       "Etape 14 de la Coupe de Ligue",
-      "Résultats complets à venir"
+      ""
     ],
     "liens": [
       {
-        "texte": "Résultats",
-        "url": ""
+        "texte": "Résultats Circuits",
+        "url": "https://drive.google.com/file/d/1Oa2ZdLrXMnR4S2KHXv0G58zPeunLXgep/view?usp=sharing"
+      },
+      {
+        "texte": "Résultats Catégories",        
+        "url": "https://drive.google.com/file/d/1DgWCpMXVYhawSf76TbusMsATSBp_zQHa/view?usp=sharing"
       },
       {
         "texte": "Résultats Temps intermédiaires",
-        "url": ""
-      },      
-      {
-        "texte": "",        
-        "url": ""
+        "url": "https://drive.google.com/file/d/1dU-5mU0R3vSN8begmcopXcoBlT-8gQwA/view?usp=sharing"
       },
+      {
+        "texte": "",
+        "url": ""
+      },          
       {
         "texte":"Annonce",
         "url":"https://drive.google.com/file/d/1Bf6vpJS1ldQwt2r3KCh9taw9fNnX-yIv/view?usp=sharing"
       }
     ],
-    "maj": "18/10/2026 10:00"
+    "maj": "18/10/2026 15:44"
   },
     "groupe8": {
     "titre": "MD régionale Col de la République(42) 21/10 ",
@@ -250,12 +254,8 @@
         "url": "https://cne2026.nose42.fr/cf-sprint"
       },
       {
-        "texte": "Map's",
-        "url": "https://www.google.com/maps/d/viewer?mid=1hRiSjUk4J13NMz9X6W0627THtVH-Lug&femb=1&ll=45.386339465732036%2C4.461886099999983&z=12"
-      },
-            {
-        "texte": "Fiche de qualifications",        
-        "url": "https://drive.google.com/file/d/1o-k9BNfFR4ZS2PZT7lmaSP6sw6HQG6p-/view?usp=sharing"
+        "texte": "map's",        
+        "url": "https://www.google.com/maps/d/u/0/viewer?mid=1hRiSjUk4J13NMz9X6W0627THtVH-Lug&femb=1&ll=45.386339465732036%2C4.461886099999983&z=12"
       },
       {
         "texte":"ffco open",
@@ -264,6 +264,10 @@
       {
         "texte":"ffco Q",        
         "url":"https://api.ffcorientation.fr/iframe/courses/108825/"
+      },
+      {
+        "texte": "Qualifiés au titre du CN",
+        "url": "https://archives.ffcorientation.fr/media/cms_page_media/7947/CFSprint-qualifiés-CN_2026.pdf"
       },
       {
         "texte":"Liste FFCO des qualifiés au Chpt de France",
