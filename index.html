@@ -759,9 +759,8 @@
 
         document.getElementById('lienAgenda').href = url;
         console.log("Clic détecté sur la balise d'orientation");
-    </script>
+    </script>    
     <script>
-
     /* =========================================================
         FICHIERS
       ========================================================= */
@@ -1016,6 +1015,11 @@
 
                     const cells =
                         line.split(';');
+                    /* Passage au tbody dès la première ligne de données */
+                    if (rowIndex >= 2 && !isBodyOpen) {
+                        htmlRaw += "</thead><tbody>";
+                        isBodyOpen = true;
+                    }    
 
                     /* =================================================
                         MASQUAGE DES PERSONNES SANS DONNÉE VISIBLE
@@ -1041,20 +1045,6 @@
 
                         rowClass =
                             ' class="sticky-row-2"';
-                    }
-
-                    /* -----------------------------------------
-                        PASSAGE AU TBODY
-                      ----------------------------------------- */
-                    if (
-                        rowIndex === 2 &&
-                        !isBodyOpen
-                    ) {
-
-                        htmlRaw +=
-                            "</thead><tbody>";
-
-                        isBodyOpen = true;
                     }
 
                     htmlRaw +=
@@ -1743,7 +1733,7 @@
 <p style="color:#e0dada">
 
     Tableau des horaires et résultats
-    mis à jour le 20/10/2026 15:50
+    mis à jour le 14/10/2026 10:41
 
 </p>
 </body>
