@@ -183,9 +183,25 @@
     ],
     "liens": [
       {
+        "texte": "Site Web",        
+        "url": "https://cdco42.fr/site/"
+      },
+      {
         "texte": "Annonce",        
         "url": "https://drive.google.com/file/d/1QQMk4eja6SP1h-yttIh8ubPRTba1Dr4O/view?usp=sharing"
       },
+      {
+        "texte": "Horaires de départ",        
+        "url": "https://cdco42.fr/site/wp-content/uploads/2026/10/Departs-par-clubs-V2-21-octobre.pdf"
+      },
+      {
+        "texte": "Consignes de course",        
+        "url": "https://cdco42.fr/site/wp-content/uploads/2026/10/Consignes-de-course-22.pdf"
+      },
+      {
+        "texte": "ancienne carte",        
+        "url": "https://cdco42.fr/site/wp-content/uploads/2026/10/Col-de-la-Rep-1-1073x1536.jpg"
+      },                    
       {
         "texte": "Liveresultats",
         "url": "https://liveresultat.orientering.se/beta/?lang=fr"
@@ -195,7 +211,7 @@
         "url":"https://api.ffcorientation.fr/iframe/courses/107022/"
       }
     ],
-    "maj": "08/10/2026 07:21"
+    "maj": "20/10/2026 15:56"
   },
     "groupe9": {
     "titre": "MD départementale Col de la République(42) 22/10",
@@ -204,9 +220,25 @@
     ],
     "liens": [
       {
+        "texte": "Site Web",        
+        "url": "https://cdco42.fr/site/"
+      },
+      {
         "texte": "Annonce",        
         "url": "https://drive.google.com/file/d/1wKI8gvIWXvrZM54r7w7WbzKpy3kJ8qqz/view?usp=sharing"
+      },      
+      {
+        "texte": "Horaires de départ",        
+        "url": "https://cdco42.fr/site/wp-content/uploads/2026/10/Departs-par-clubs-V2-22-octobre.pdf"
       },
+      {
+        "texte": "Consignes de course",        
+        "url": "https://cdco42.fr/site/wp-content/uploads/2026/10/Consignes-de-course-22.pdf"
+      },
+      {
+        "texte": "ancienne carte",        
+        "url": "https://cdco42.fr/site/wp-content/uploads/2026/10/Col-de-la-Rep-1-1073x1536.jpg"
+      },                  
       {
         "texte": "Liveresultats",
         "url": "https://liveresultat.orientering.se/?lang=fr"
@@ -216,7 +248,7 @@
         "url":"https://api.ffcorientation.fr/iframe/courses/107023/"
       }
     ],
-    "maj": "07/10/2026 07:31"
+    "maj": "20/10/2026 15:57"
   },
     "groupe10": {
     "titre": "Pélussin City Race (42) 23/10",
