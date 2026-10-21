@@ -284,9 +284,9 @@
     "maj": "08/10/2026 07:23"
   },
     "groupe11": {
-    "titre": "Sprint Open & CF Saint-Etienne(42) 24/10",
+    "titre": "Sprint Open & CF Saint-Etienne(42) ==> transfert sur Le Bessat 24/10",
     "textes": [
-      ""
+      "Toutes les informations relatives au changement d'épreuve suivront."
     ],
     "liens": [
             {
@@ -299,7 +299,7 @@
       },
       {
         "texte": "INFORMATION Importante suite aux évènements actuels",        
-        "url": "https://cne2026.nose42.fr/accueil"
+        "url": "https://drive.google.com/file/d/1-HJeRy8IH0ayfLnN60H7br6ASGwlYYCx/view?usp=sharing"
       },
       {
         "texte": "",        
@@ -310,16 +310,16 @@
         "url": ""
       },                  
       {
-        "texte": "map's",        
-        "url": "https://www.google.com/maps/d/u/0/viewer?mid=1hRiSjUk4J13NMz9X6W0627THtVH-Lug&femb=1&ll=45.386339465732036%2C4.461886099999983&z=12"
+        "texte": "",        
+        "url": ""
       },
       {
-        "texte":"ffco open",
-        "url":"https://api.ffcorientation.fr/iframe/courses/105688/"
+        "texte":"",
+        "url":""
       },
       {
-        "texte":"ffco Q",        
-        "url":"https://api.ffcorientation.fr/iframe/courses/108825/"
+        "texte":"",        
+        "url":""
       },
       {
         "texte": "Qualifiés au titre du CN",
@@ -330,7 +330,7 @@
         "url":"https://www.ffcorientation.fr/wp-content/uploads/2026/10/championnat_de_france_sprint_2026_listesqualifies_categories.pdf"
       }
     ],
-    "maj": "09/10/2026 11:12"
+    "maj": "21/10/2026 15:06"
   },
     "groupe12": {
     "titre": "",
