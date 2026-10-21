@@ -641,6 +641,23 @@
         }
     }
 
+    /* =========================================================
+        TOTALISATEUR
+      ========================================================= */
+    .ligne-totaux td {
+        font-weight: 600;
+        text-align: center;
+        border-top: solid 0.1em;
+        background: var(--fond-entete,);
+    }
+
+    .separateur-inscriptions {
+        margin: 1.25rem 0 0.5rem;
+        padding: 0.6rem 0.75rem;
+        border-top: 2px solid currentColor;
+        font-size: 1.05rem;
+    }
+
 </style>
 </head>
 
@@ -710,7 +727,7 @@
 
     <!-- =====================================================
         FENÊTRE D'INFORMATIONS
-        ===================================================== -->
+    ========================================================== -->
     <div id="info-modal"
         class="info-modal">
         <div class="info-modal-content">
@@ -741,7 +758,7 @@
 
     <!-- =====================================================
         JAVASCRIPT
-        ===================================================== -->
+    ========================================================== -->
     <script>
         // Date du jour
         const aujourdHui = new Date();
@@ -775,48 +792,18 @@
         DICTIONNAIRE DES LIENS DU TABLEAU
       ========================================================= */
     const liensPersonnalises = {
-        "":"",
         "1.Rés.": "",      
         "1.Pl.": "",
 
-        "":"",
         "2.Hor.":"",
         "2.Rés.": "",
         "2.Pl.":"",
         "2.écart":"",
 
-        "":"",
         "3.Hor.":"",
         "3.Rés.": "",
         "3.Pl.":"",
         "3.écart":"",
-
-        "":"",
-        "4.Rés.": "",
-        "4.Pl.": "",
-
-        "":"",
-        "5.Hor.":"",
-        "5.Rés.": "",
-        "5.Pl.": "",
-
-        "":"",
-        "6.Rés.": "",
-        "6.Pl.": "",
-
-        "":"",
-        "7.Circ.": "",
-        "7.Hor.": "",
-        "7.Rés.": "",
-        "7.écart": "",
-
-        "8.Circ.": "",
-        "8.Hor.": "",
-        "8.écart": "",
-
-        "9.Circ.": "",
-        "9.Hor.": "",
-        "9.écart": "",
     };
 
     /* =========================================================
@@ -881,53 +868,38 @@
             const textData =
                 decoder.decode(buffer);
 
-            const lines =
-                textData.split(/\r?\n/);
+            const lignesCsv = textData
+                .split(/\r?\n/)
+                .filter(line => line.trim() !== "" && !/^;+$/.test(line.trim()));
 
-            if (lines.length === 0) {
-
-                throw new Error(
-                    "Le fichier CSV est vide."
-                );
+            if (lignesCsv.length < 2) {
+                throw new Error("Le fichier CSV ne contient pas les deux lignes d'en-tête attendues.");
             }
 
-            /* =================================================
-                DÉTECTION DES COLONNES AVEC DONNÉES
-              ================================================= */
-            const colonnesAvecDonnees =
-                new Set();
-
-            lines.forEach(
-                (line, rowIndex) => {
-
-                    if (
-                        line.trim() === "" ||
-                        /^;+$/.test(line.trim())
-                    ) {
-                        return;
-                    }
-
-                    if (rowIndex >= 2) {
-
-                        const cells =
-                            line.split(';');
-
-                        cells.forEach(
-                            (cellValue, colIndex) => {
-
-                                if (
-                                    cellValue.trim() !== ""
-                                ) {
-
-                                    colonnesAvecDonnees
-                                        .add(colIndex);
-                                }
-                            }
-                        );
-                    }
-                }
+            const lignesEntete = lignesCsv.slice(0, 2);
+            const lignesDonnees = lignesCsv.slice(2);
+            const marqueur = "INSCRIPTIONS COMPLEMENTAIRES";
+            const indexMarqueur = lignesDonnees.findIndex(line =>
+                (line.split(';')[0] || "").trim().toLocaleUpperCase('fr-FR') === marqueur
             );
 
+            let lignesInitiales;
+            let lignesComplementaires;
+            if (indexMarqueur >= 0) {
+                lignesInitiales = lignesDonnees.slice(0, indexMarqueur);
+                lignesComplementaires = lignesDonnees.slice(indexMarqueur + 1);
+            } else {
+                lignesInitiales = lignesDonnees;
+                lignesComplementaires = [];
+            }
+
+            const toutesLesLignesParticipants = [...lignesInitiales, ...lignesComplementaires];
+            const colonnesAvecDonnees = new Set();
+            toutesLesLignesParticipants.forEach(line => {
+                line.split(';').forEach((cellValue, colIndex) => {
+                    if (cellValue.trim() !== "") colonnesAvecDonnees.add(colIndex);
+                });
+            });
 
             /* =================================================
                 TEST D'ACTIVITÉ D'UN GROUPE DE 5
@@ -979,17 +951,6 @@
                 return false;
             }
 
-            /* =================================================
-                CONSTRUCTION DU TABLEAU
-              ================================================= */
-            let htmlRaw =
-                "<table><thead>";
-
-            let isBodyOpen = false;
-
-            /* =================================================
-                COLONNES DE CHOIX
-              ================================================= */
             const colonnesDeChoix = [
                 4, 9, 14, 19, 24,
                 29, 34, 39, 44,
@@ -998,38 +959,50 @@
                 89, 94, 99
             ];
 
-            /* =================================================
-                LECTURE DES LIGNES
-              ================================================= */
-            lines.forEach(
-                (line, rowIndex) => {
+            function construireTableau(lignesSection, ajouterTotaux) {
+                let html = "<table><thead>";
+                let isBodyOpen = false;
+                const lignesPourTableau = [...lignesEntete, ...lignesSection];
+                let ligneTotaux = null;
+
+                if (ajouterTotaux) {
+                    const nombreColonnes = Math.max(
+                        3,
+                        ...toutesLesLignesParticipants.map(line => line.split(';').length),
+                        ...lignesEntete.map(line => line.split(';').length)
+                    );
+                    const cellulesTotaux = Array(nombreColonnes).fill("");
+                    cellulesTotaux[0] = "TOTAL";
+                    for (let debutGroupe = 3; debutGroupe < nombreColonnes; debutGroupe += 5) {
+                        let total = 0;
+                        lignesSection.forEach(line => {
+                            const cells = line.split(';');
+                            if (ligneAUneDonneeVisible(cells) && (cells[debutGroupe] || "").trim() !== "") total++;
+                        });
+                        cellulesTotaux[debutGroupe] = String(total);
+                    }
+                    ligneTotaux = cellulesTotaux.join(';');
+                    lignesPourTableau.push(ligneTotaux);
+                }
+
+                lignesPourTableau.forEach((line, rowIndex) => {
 
                     /* -----------------------------------------
                         IGNORE LES LIGNES VIDES
                       ----------------------------------------- */
-                    if (
-                        line.trim() === "" ||
-                        /^;+$/.test(line.trim())
-                    ) {
-
-                        return;
-                    }
-
                     const cells =
                         line.split(';');
                     /* Passage au tbody dès la première ligne de données */
                     if (rowIndex >= 2 && !isBodyOpen) {
-                        htmlRaw += "</thead><tbody>";
+                        html += "</thead><tbody>";
                         isBodyOpen = true;
                     }    
 
                     /* =================================================
                         MASQUAGE DES PERSONNES SANS DONNÉE VISIBLE
                       ================================================= */
-                    if (
-                        rowIndex >= 2 &&
-                        !ligneAUneDonneeVisible(cells)
-                    ) {
+                    const isTotalRow = ligneTotaux !== null && line === ligneTotaux;
+                    if (rowIndex >= 2 && !isTotalRow && !ligneAUneDonneeVisible(cells)) {
                         return;
                     }    
 
@@ -1037,19 +1010,15 @@
                         CLASSES DES LIGNES D'EN-TÊTE
                       ----------------------------------------- */
                     let rowClass = "";
-
-                    if (rowIndex === 0) {
-
-                        rowClass =
-                            ' class="sticky-row-1"';
-
+                    if (isTotalRow) {
+                        rowClass = ' class="ligne-totaux"';
+                    } else if (rowIndex === 0) {
+                        rowClass = ' class="sticky-row-1"';
                     } else if (rowIndex === 1) {
-
-                        rowClass =
-                            ' class="sticky-row-2"';
+                        rowClass = ' class="sticky-row-2"';
                     }
 
-                    htmlRaw +=
+                    html +=
                         `<tr${rowClass}>`;
 
                     /* -----------------------------------------
@@ -1420,7 +1389,7 @@
                         /* ---------------------------------------------
                             CRÉATION DE LA CELLULE
                           --------------------------------------------- */
-                        htmlRaw +=
+                        html +=
                             `<${cellTag}
                                 class="${cellClass}"
                                 ${colspanAttr}>
@@ -1429,18 +1398,17 @@
 
                     }
 
-                    htmlRaw += "</tr>";
+                    html += "</tr>";
+                });
+                html += isBodyOpen ? "</tbody></table>" : "</thead></table>";
+                return html;
+            }
 
-                }
-            );
-
-            /* =========================================================
-                FIN DU TABLEAU
-              ========================================================= */
-            htmlRaw +=
-                isBodyOpen
-                    ? "</tbody></table>"
-                    : "</thead></table>";
+            let htmlRaw = construireTableau(lignesInitiales, true);
+            if (lignesComplementaires.length > 0) {
+                htmlRaw += '<div class="separateur-inscriptions"><strong>Inscriptions complémentaires</strong></div>';
+                htmlRaw += construireTableau(lignesComplementaires, false);
+            }
 
             /* =========================================================
                 AFFICHAGE
