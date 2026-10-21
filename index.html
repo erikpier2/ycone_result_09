@@ -116,6 +116,25 @@
         color: var(--texte2);
     }
 
+    /* Alignement horizontal de l'icône et des titres */
+    .header-container {
+        display: flex;
+        align-items: center; /* Aligne verticalement l'icône et le texte au centre */
+        gap: 15px;           /* Crée un espace de 15px entre l'icône et les titres */
+        padding: 10px;       /* Optionnel : ajoute un peu d'espace autour du bloc */
+    }
+
+    /* Optionnel : Remise à zéro des marges des titres pour éviter les décalages */
+    .titles-block h1, 
+    .titles-block h2 {
+        margin: 0;
+    }
+
+    /* Optionnel : Un petit espace sous le H1 si vous le souhaitez */
+    .titles-block h1 {
+        margin-bottom: 4px;
+    }
+
     /* =========================================================
         CONTENEUR DU TABLEAU
     ========================================================= */
@@ -657,7 +676,13 @@
         border-top: 2px solid currentColor;
         font-size: 1.05rem;
     }
-
+    .mon-icone {
+        /* Définissez la taille de votre choix ici */
+        width: 50px; 
+        height: 50px;        
+        /* Optionnel : garantit que le ratio carré (1:1) reste parfait */
+        aspect-ratio: 1 / 1;    
+    }
 </style>
 </head>
 
@@ -667,18 +692,28 @@
     <!-- =====================================================
         TITRE
     ========================================================== -->
+    <header class="header-container">
+    <!-- Votre icône SVG -->
+    <svg class="mon-icone" width="100%" height="100%" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <!-- vector-effect ajouté pour garder des bordures proportionnelles -->
+        <rect x="10" y="10" width="180" height="180" fill="#f3f1e9" stroke="#453cf4" stroke-width="2" />
+        <rect x="25" y="25" width="150" height="150" fill="none" stroke="#453cf4" stroke-width="14"  />
+        <polygon points="25,175 25,28 170,175" fill="#453cf4"/>
+        <g fill="#453cf4">
+        <text x="66" y="65" font-family="'Fancy', 'Helvetica Neue', Arial, sans-serif" font-weight="1000" font-size="25" letter-spacing="0">ƳᑕÔᑎᗴ</text>      
+        <text x="98" y="90" font-family="'Fancy', 'Helvetica Neue', Arial, sans-serif" font-weight="800" font-size="16" letter-spacing="-1">Sens</text>
+        </g> 
+    </svg>
+    <!-- Le bloc contenant vos titres -->
+    <div class="titles-block">
     <h1>
         Horaires/Résultats YCÔNE 2026 &#8195;&#8195;
         <span style="font-size: 10px;">
             01/10/2026 au 31/12/2026
         </span>
     </h1>
-
-    <!-- =====================================================
-        LIENS
-        ===================================================== -->
     <h2>
-        &#8195;&#8195;&#8195;
+        &#8195;
         Lien :
         <a class="lien"
             href="https://erikpier2.github.io/ycone_2026/"
@@ -697,7 +732,7 @@
         <span>
             &#8195;&#8195;&#8195;&#8195;&#8195;
         </span>
-
+    
         <!-- La balise <a> rend tout ce qu'elle contient cliquable -->
         <a id="lienAgenda" href="#" target="_blank" rel="noopener"
             title="Consulter l'agenda FFCO"> 
@@ -710,6 +745,13 @@
         </a>
         Agenda FFCO
     </h2>
+    </div>
+</header>
+
+    
+    <!-- =====================================================
+    LIENS
+    ===================================================== -->
 
     <!-- =====================================================
         CHARGEMENT
