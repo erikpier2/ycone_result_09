@@ -261,27 +261,27 @@
         "url": "https://oe4203.wordpress.com/pelussin-city-race/"
       },
       {
-        "texte": "Horaires de départ",        
-        "url": "https://jolatomme.alwaysdata.net/competition/5/start-list/?view=club#group-8903-8903bf-ycone-sens"
+        "texte": "Résultats Circuits",        
+        "url": "https://jolatomme.alwaysdata.net/"
       },
       {
-        "texte": "Infos techniques",        
-        "url": "https://oe4203.wordpress.com/pelussin-city-race/#informations"
+        "texte": "",        
+        "url": ""
       },
       {
         "texte": "",        
         "url": ""
       },                    
       {
-        "texte": "Liveresultats",
-        "url": "https://liveresultat.orientering.se/?lang=fr"
+        "texte": "",
+        "url": ""
       },
       {
-        "texte":"ffco",
-        "url":"https://api.ffcorientation.fr/iframe/courses/103151/"
+        "texte":"",
+        "url":""
       }
     ],
-    "maj": "08/10/2026 07:23"
+    "maj": "23/10/2026 19:19"
   },
     "groupe11": {
     "titre": "Sprint Open & CF Saint-Etienne(42) ==> transfert sur Le Bessat 24/10",
