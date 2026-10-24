@@ -286,12 +286,12 @@
     "groupe11": {
     "titre": "Sprint Open & CF Saint-Etienne(42) ==> transfert sur Le Bessat 24/10",
     "textes": [
-      "Toutes les informations relatives au changement d'épreuve suivront."
+      ""
     ],
     "liens": [
             {
-        "texte": "Annonce",        
-        "url": "https://drive.google.com/file/d/1Jt1o6CMrg2RLDqH9zVgW4257HQe93Drh/view?usp=sharing"
+        "texte": "Résultats O'Live",        
+        "url": "https://www.co-live.fr/olive/resultats.php"
       },
       {
         "texte": "Site Web",        
@@ -302,8 +302,8 @@
         "url": "https://drive.google.com/file/d/1-HJeRy8IH0ayfLnN60H7br6ASGwlYYCx/view?usp=sharing"
       },
       {
-        "texte": "Résultats",        
-        "url": "https://www.co-live.fr/olive/resultats.php"
+        "texte": "",        
+        "url": ""
       },
       {
         "texte": "",        
@@ -330,7 +330,7 @@
         "url":"https://www.ffcorientation.fr/wp-content/uploads/2026/10/championnat_de_france_sprint_2026_listesqualifies_categories.pdf"
       }
     ],
-    "maj": "21/10/2026 15:06"
+    "maj": "24/10/2026 18:51"
   },
     "groupe12": {
     "titre": "",
@@ -363,6 +363,10 @@
         "texte": "Site Web",
         "url": "https://cne2026.nose42.fr/cne"
       },
+      {
+        "texte": "Résultats O'Live",        
+        "url": "https://www.co-live.fr/olive/resultats.php"
+      },      
             {
         "texte": "ffco",        
         "url": "https://api.ffcorientation.fr/iframe/courses/105692/"
@@ -372,7 +376,7 @@
         "url": "https://drive.google.com/file/d/1UYNTnd6689FtgNLbVwPkC3zKdmf29CZK/view?usp=sharing"
       }
     ],
-    "maj": "06/10/2026 05:22"
+    "maj": "24/10/2026 18:51"
   },
     "groupe14": {
     "titre": "CNE Chpt de France de Nuit Le Bessat(42) lundi 26/10",
