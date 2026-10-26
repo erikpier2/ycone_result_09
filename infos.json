@@ -393,15 +393,15 @@
         "url": "https://cne2026.nose42.fr/cn-nuit"
       },
       {
-        "texte": "Map's",
-        "url": "https://www.google.com/maps/d/viewer?mid=1hRiSjUk4J13NMz9X6W0627THtVH-Lug&femb=1&ll=45.386339465732036%2C4.461886099999983&z=12"
+        "texte": "Résultats O'Live",
+        "url": "https://www.co-live.fr/olive/resultats.php?Action=ChoixResultats&IdCourse=152"
       },
       {
-        "texte": "ffco",        
-        "url": "https://api.ffcorientation.fr/iframe/courses/105694/"
+        "texte": "",        
+        "url": ""
       }      
     ],
-    "maj": "08/10/2026 07:32"
+    "maj": "26/10/2026 22:35"
   },
     "groupe15": {
     "titre": "",
