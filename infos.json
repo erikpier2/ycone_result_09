@@ -1,87 +1,87 @@
 {
   "groupe1": {
-    "titre": "LD Nemours (77) – 4 octobre",
+    "titre": "",
     "textes": [
-      "Informations concernant la course de Nemours.",
-      "Les horaires, résultats et documents disponibles sont accessibles dans les colonnes du tableau."
+      "",
+      ""
     ],
     "liens": [
       {
-        "texte": "Résultats Circuits",
-        "url": "https://drive.google.com/file/d/164nk25AF2wsfYGwdS0gv3WiwmrRX-0Lp/view?usp=sharing"
+        "texte": "",
+        "url": ""
       },
       {
-        "texte": "Annonce",
-        "url": "https://drive.google.com/file/d/1QrOnt-HcuTtvGSR5_7xQkPmd7BuNOapq/view?usp=sharing"
+        "texte": "",
+        "url": ""
       }
     ],
     "maj": "04/10/2026 09:18"
   },
 
   "groupe2": {
-    "titre": "NSE Sprint Lambesc (13) – 3 octobre",
+    "titre": "",
     "textes": [
-      "Course nationale Sprint.",
-      "Les différents documents et liens disponibles sont regroupés ici."
+      "",
+      ""
     ],
     "liens": [
       {
-        "texte": "Résultats Sprint (NSE)",
-        "url": "https://heyries.alwaysdata.net/competition/1/"
+        "texte": "",
+        "url": ""
       },
       {
-        "texte": "Horaires de départ",
-        "url": "https://nse2026.paca-co.fr/wp-content/uploads/2026/09/Horaires-de-depart-par-club-sprint-Lambesc.html"
+        "texte": "",
+        "url": ""
       },
       {
-        "texte": "Horaires par catégorie",
-        "url": "https://nse2026.paca-co.fr/wp-content/uploads/2026/09/Horaires-de-depart-par-categorie-sprint-Lambesc.html"
+        "texte": "",
+        "url": ""
       },
       {
-        "texte": "Consignes de course",
-        "url": "https://nse2026.paca-co.fr/wp-content/uploads/2026/09/Nationale-SE-2026-SPRINT-consignes-de-course.pdf"
+        "texte": "",
+        "url": ""
       }
     ],
     "maj": "03/10/2026"
   },
 
   "groupe3": {
-    "titre": "LD Meyrargues (13) – 4 octobre",
+    "titre": "LD régionale Larchant (77) – 4 octobre",
     "textes": [
-      "Course nationale Longue Distance (NSE)",
-      "Les informations concernant cette épreuve sont regroupées dans cette fenêtre."
-    ],
-    "liens": [
-      {
-        "texte": "Résultats Nationale LD",
-        "url": "https://heyries.alwaysdata.net/competition/2/"
-      },
-      {
-        "texte": "Horaires de départ",
-        "url": "https://nse2026.paca-co.fr/wp-content/uploads/2026/09/Horaires-de-depart-par-club-LD-Meyrargues-v2.html"
-      },
-      {
-        "texte": "Horaires par catégorie",
-        "url": "https://nse2026.paca-co.fr/wp-content/uploads/2026/09/Horaires-de-depart-par-categorie-LD-Meyrargues-v2.html"
-      },
-      {
-        "texte": "Consignes de course",
-        "url": "https://nse2026.paca-co.fr/wp-content/uploads/2026/09/Nationale-LD-Meyrargues-Consignes-de-course-Bulletin-2.pdf"
-      }
-    ],
-    "maj": "04/10/2026 18:47"
-  },
-
-    "groupe4": {
-    "titre": "Sprint R. Quetigny(21) 10/10",
-    "textes": [
-      "Course régionale Sprint à Quetigny(21)",
-      "Cette épreuve comptant pour la Coupe de Ligue(cdlp) est l'étape 12."
+      "Course régionale Longue Distance à Larchant(77), 'le rocher de la Dame Jouanne'",
+      ""
     ],
     "liens": [
       {
         "texte": "Annonce",
-        "url": "https://drive.google.com/file/d/1AGCc6prWtvzRJWoXNc-l1V4T1g1IDAZt/view?usp=sharing"
+        "url": "https://balise77.com/site/wp-content/uploads/2026/10/ANNONCE-15-NOV-PP.pdf"
+      },
+      {
+        "texte": "",
+        "url": ""
+      },
+      {
+        "texte": "",
+        "url": ""
+      },
+      {
+        "texte": "",
+        "url": ""
+      }
+    ],
+    "maj": "31/10/2026 20:12"
+  },
+
+    "groupe4": {
+    "titre": "",
+    "textes": [
+      "",
+      ""
+    ],
+    "liens": [
+      {
+        "texte": "",
+        "url": ""
       },
       {
         "texte": "",        
@@ -92,186 +92,193 @@
         "url": " "
       },
       {
-        "texte": "Consignes de course",
-        "url": "https://drive.google.com/file/d/1S9cMOEykbylkeC_OsuguBag1RywI82P6/view?usp=drivesdk"
+        "texte": "",
+        "url": ""
       }
     ],
     "maj": "04/10/2026 19:51"
   },
 
   "groupe5": {
-    "titre": "LD Fontainebleau(77) 11/10",
+    "titre": "",
     "textes": [
-      "Course régionale Longue Distance à Fontainebleau(77), 'la vallée des chatons'"
+      ""
     ],
     "liens": [
-      {        "texte": "Résultats Circuits",        
-        "url": "https://res.cloudinary.com/hkgivq3wi/image/upload/v1791740064/organisations/resultat_simple69?_a=BAAABnH8"
+      {        "texte": "",
+        "url": ""
       },
-      {         "texte":"Résultats Temps intermédiaires",
-        "url":"https://res.cloudinary.com/hkgivq3wi/image/upload/v1791740064/organisations/resultat_si69?_a=BAAABnH8"
+      {         "texte":"",
+        "url":""
       },
       {
-        "texte": "Annonce",
-        "url": "https://drive.google.com/file/d/1_A_gRsILoPcEk75u7kgxuagqv87XJruI/view?usp=sharing"
+        "texte": "",
+        "url": ""
       }
     ],
-    "maj": "11/10/2026 19:39"     
+    "maj": "11/10/2026 19:39"
   },
+
   "groupe6": {
-    "titre": "Sprint Avallon(89) 17/10 ",
+    "titre": "",
     "textes": [
-      "Course régionale Sprint à Avallon(89)",
-      "Etape 13 de la Coupe de Ligue",
-      ""     
+      "",
+      "",
+      ""
         ],
     "liens": [
       {
-        "texte": "Résultats Circuits",
-        "url": "https://drive.google.com/file/d/1CG-l-nuBvzM9Wt7-IIxU86SqP886DLh7/view?usp=sharing"
-      },
-      {
-        "texte": "Résultats Temps intermédiaires",
-        "url": "https://drive.google.com/file/d/1EUMxAW1gAIfwfoXKkECjoEwJSO343W_9/view?usp=sharing"
-      },      
-      {
-        "texte": "",        
+        "texte": "",
         "url": ""
       },
       {
-          "texte":"Annonce",
-          "url":"https://drive.google.com/file/d/1FLz5XkTfCK3YJNzttsfIDcWp4yXR7pg3/view?usp=sharing"
+        "texte": "",
+        "url": ""
+      },
+      {
+        "texte": "", 
+        "url": ""
+      },
+      {
+          "texte":"",
+          "url":""
       }
     ],
     "maj": "18/10/2026 15:44"
   },
+
   "groupe7": {
-    "titre": "CDL Nuit Avallon(89) 17/10 ",
-    "textes": [
-      "Course nocturne : Championnat de Ligue de Nuit à Avallon(89)",
-      "Etape 14 de la Coupe de Ligue",
+  "titre": "Sprint régionale Saint-Fargeau(89) dim 29/11 le matin",
+  "textes": [
+      "",
+      "",
+      ""  
+  ],
+  "liens": [
+    {
+      "texte": "",
+      "url": ""
+    },
+    {
+      "texte": "",
+      "url": ""
+    },
+    {
+      "texte": "",
+      "url": ""
+    },
+    {
+      "texte": "",
+      "url": ""
+    },
+    {
+      "texte":"",
+      "url":""
+    },
+    {
+      "texte": "",
+      "url": ""
+    },
+    {
+      "texte": "",
+      "url": ""
+    }
+  ],
+  "maj": "22/10/2026 15:23"
+},
+
+"groupe8": {
+  "titre": "MD régionale Saint-Fargeau(89) dim 29/11",
+  "textes": [
+      "limite d'inscription vendredi 20/11",
+      "Etape 15 de la Coupe de Ligue",
       ""
     ],
     "liens": [
       {
-        "texte": "Résultats Circuits",
-        "url": "https://drive.google.com/file/d/1Oa2ZdLrXMnR4S2KHXv0G58zPeunLXgep/view?usp=sharing"
+        "texte": "",
+        "url": ""
       },
       {
-        "texte": "Résultats Catégories",        
-        "url": "https://drive.google.com/file/d/1DgWCpMXVYhawSf76TbusMsATSBp_zQHa/view?usp=sharing"
+        "texte": "",
+        "url": ""
       },
       {
-        "texte": "Résultats Temps intermédiaires",
-        "url": "https://drive.google.com/file/d/1dU-5mU0R3vSN8begmcopXcoBlT-8gQwA/view?usp=sharing"
+        "texte": "",
+        "url": ""
       },
       {
         "texte": "",
         "url": ""
       },          
       {
-        "texte":"Annonce",
-        "url":"https://drive.google.com/file/d/1Bf6vpJS1ldQwt2r3KCh9taw9fNnX-yIv/view?usp=sharing"
+        "texte":"",
+        "url":""
       }
     ],
     "maj": "18/10/2026 15:44"
   },
-    "groupe8": {
-    "titre": "MD régionale Col de la République(42) 21/10 ",
-    "textes": [
-      "Moyenne distance "
-    ],
-    "liens": [
-      {
-        "texte": "Site Web",        
-        "url": "https://cdco42.fr/site/"
-      },
-      {
-        "texte": "Annonce",        
-        "url": "https://drive.google.com/file/d/1QQMk4eja6SP1h-yttIh8ubPRTba1Dr4O/view?usp=sharing"
-      },
-      {
-        "texte": "ancienne carte",        
-        "url": "https://cdco42.fr/site/wp-content/uploads/2026/10/Col-de-la-Rep-1-1073x1536.jpg"
-      },                    
-      {
-        "texte": "Liveresultats",
-        "url": "https://liveresultat.orientering.se/beta/?lang=fr"
-      },
-      {
-        "texte":"ffco",
-        "url":"https://api.ffcorientation.fr/iframe/courses/107022/"
-      },
-      {
-        "texte": "",        
-        "url": ""
-      },
-      {
-        "texte": "",        
-        "url": ""
-      }
-    ],
-    "maj": "22/10/2026 15:23"
-  },
-    "groupe9": {
-    "titre": "MD départementale Col de la République(42) 22/10",
-    "textes": [
-      "Moyenne distance "
-    ],
-    "liens": [
-      {
-        "texte": "Site Web",        
-        "url": "https://cdco42.fr/site/"
-      },
-      {
-        "texte": "Annonce",        
-        "url": "https://drive.google.com/file/d/1wKI8gvIWXvrZM54r7w7WbzKpy3kJ8qqz/view?usp=sharing"
-      },      
-      {
-        "texte": "ancienne carte",        
-        "url": "https://cdco42.fr/site/wp-content/uploads/2026/10/Col-de-la-Rep-1-1073x1536.jpg"
-      },                  
-      {
-        "texte": "Liveresultats",
-        "url": "https://liveresultat.orientering.se/?lang=fr"
-      },
-      {
-        "texte":"ffco",
-        "url":"https://api.ffcorientation.fr/iframe/courses/107023/"
-      },
-      {
-        "texte": "",        
-        "url": ""
-      },
-      {
-        "texte": "",        
-        "url": ""
-      }
-    ],
-    "maj": "22/10/2026 15:26"
-  },
+
+  "groupe9": {
+  "titre": "",
+  "textes": [
+    ""
+  ],
+  "liens": [
+    {
+      "texte": "",
+      "url": ""
+    },
+    {
+      "texte": "",
+      "url": ""
+    },
+    {
+      "texte": "",
+      "url": ""
+    },
+    {
+      "texte": "",
+      "url": ""
+    },
+    {
+      "texte":"",
+      "url":""
+    },
+    {
+      "texte": "",
+      "url": ""
+    },
+    {
+      "texte": "",
+      "url": ""
+    }
+  ],
+  "maj": "22/10/2026 15:26"
+},
+
     "groupe10": {
-    "titre": "Pélussin City Race (42) 23/10",
+    "titre": "",
     "textes": [
-      "Le tracé alterne entre le cœur historique de la ville (ruelles pavées, escaliers, passages étroits), quelques zones pavillonaires et des petites zones herbeuses (parc)."
+      ""
     ],
     "liens": [
       {
-        "texte": "Site Web",        
-        "url": "https://oe4203.wordpress.com/pelussin-city-race/"
-      },
-      {
-        "texte": "Résultats Circuits",        
-        "url": "https://jolatomme.alwaysdata.net/"
-      },
-      {
-        "texte": "",        
+        "texte": "",
         "url": ""
       },
       {
-        "texte": "",        
+        "texte": "",
         "url": ""
-      },                    
+      },
+      {
+        "texte": "",
+        "url": ""
+      },
+      {
+        "texte": "",
+        "url": ""
+      }, 
       {
         "texte": "",
         "url": ""
@@ -284,33 +291,33 @@
     "maj": "23/10/2026 19:19"
   },
     "groupe11": {
-    "titre": "Sprint Open & CF Saint-Etienne(42) ==> transfert sur Le Bessat 24/10",
+    "titre": "",
     "textes": [
       ""
     ],
     "liens": [
             {
-        "texte": "Résultats O'Live",        
-        "url": "https://www.co-live.fr/olive/resultats.php"
-      },
-      {
-        "texte": "Site Web",        
-        "url": "https://cne2026.nose42.fr/cf-sprint"
-      },
-      {
-        "texte": "INFORMATION Importante suite aux évènements actuels",        
-        "url": "https://drive.google.com/file/d/1-HJeRy8IH0ayfLnN60H7br6ASGwlYYCx/view?usp=sharing"
-      },
-      {
-        "texte": "",        
+        "texte": "",
         "url": ""
       },
       {
-        "texte": "",        
+        "texte": "",
         "url": ""
-      },                  
+      },
       {
-        "texte": "",        
+        "texte": "",
+        "url": ""
+      },
+      {
+        "texte": "", 
+        "url": ""
+      },
+      {
+        "texte": "", 
+        "url": ""
+      },
+      {
+        "texte": "",
         "url": ""
       },
       {
@@ -318,16 +325,16 @@
         "url":""
       },
       {
-        "texte":"",        
+        "texte":"",
         "url":""
       },
       {
-        "texte": "Qualifiés au titre du CN",
-        "url": "https://archives.ffcorientation.fr/media/cms_page_media/7947/CFSprint-qualifiés-CN_2026.pdf"
+        "texte": "",
+        "url": ""
       },
       {
-        "texte":"Liste FFCO des qualifiés au Chpt de France",
-        "url":"https://www.ffcorientation.fr/wp-content/uploads/2026/10/championnat_de_france_sprint_2026_listesqualifies_categories.pdf"
+        "texte":"",
+        "url":""
       }
     ],
     "maj": "24/10/2026 18:51"
@@ -350,51 +357,51 @@
     "maj": "08/10/2026 07:29"
   },
     "groupe13": {
-    "titre": "CNE relais Le Bessat(42) dimanche 25/10",
+    "titre": "",
     "textes": [
       ""
     ],
     "liens": [
       {
-        "texte": "Annonce",        
-        "url": "https://drive.google.com/file/d/1JEkuMS6nXbWPMhWs35oQG98tP97LpUQ4/view?usp=sharing"
+        "texte": "",
+        "url": ""
       },
       {
-        "texte": "Site Web",
-        "url": "https://cne2026.nose42.fr/cne"
+        "texte": "",
+        "url": ""
       },
       {
-        "texte": "Résultats O'Live",        
-        "url": "https://www.co-live.fr/olive/resultats.php"
+        "texte": "",
+        "url": ""
       },      
             {
-        "texte": "ffco",        
-        "url": "https://api.ffcorientation.fr/iframe/courses/105692/"
+        "texte": "",
+        "url": ""
       },
             {
-        "texte": "ancienne carte",        
-        "url": "https://drive.google.com/file/d/1UYNTnd6689FtgNLbVwPkC3zKdmf29CZK/view?usp=sharing"
+        "texte": "",
+        "url": ""
       }
     ],
     "maj": "24/10/2026 18:51"
   },
     "groupe14": {
-    "titre": "CNE Chpt de France de Nuit Le Bessat(42) lundi 26/10",
+    "titre": "",
     "textes": [
       ""
     ],
     "liens": [
             {
-        "texte": "Annonce",        
-        "url": "https://drive.google.com/file/d/1JS8xQmTSq3uKGppH0TXde1cQWbUuF_W9/view?usp=sharing"
+        "texte": "",
+        "url": ""
       },
       {
-        "texte": "Site Web",        
-        "url": "https://cne2026.nose42.fr/cn-nuit"
+        "texte": "",
+        "url": ""
       },
       {
-        "texte": "Résultats O'Live",
-        "url": "https://www.co-live.fr/olive/resultats.php?Action=ChoixResultats&IdCourse=152"
+        "texte": "",
+        "url": ""
       },
       {
         "texte": "",        
