@@ -411,78 +411,97 @@
     "maj": "26/10/2026 22:35"
   },
     "groupe15": {
-    "titre": "",
+    "titre": "Provom2027 Prologue Mazaugues(83) 24/02/2027",
     "textes": [
-      ""
+      "Commencez en marchant (vraiment)!"
     ],
     "liens": [
       {
-        "texte": "",        
-        "url": ""
+        "texte": "Page Prologue",        
+        "url": "https://provom.fr/prologue/"
       },
       {
         "texte": "",
         "url": ""
       }
     ],
-    "maj": "06/10/2026 05:22"
+    "maj": "01/11/2026 20:18"
   },
     "groupe16": {
-    "titre": "",
+    "titre": "Provom2027 MD J1 Plan d'Aups(83) 25/02",
     "textes": [
+      "Format : Moyenne Distance au Classement National",
       ""
     ],
     "liens": [
       {
-        "texte": "",        
-        "url": ""
+        "texte": "Jour 1",        
+        "url": "https://provom.fr/jour-1/"
       },
       {
         "texte": "",
         "url": ""
       }
     ],
-    "maj": "06/10/2026 05:22"
+    "maj": "01/11/2026 20:18"
   },
     "groupe17": {
-    "titre": " ",
+    "titre": "Provom2027 MD J2 Plan d'Aups(83) 26/02",
     "textes": [
+      "Format : Moyenne Distance au Classement National",
       ""
     ],
     "liens": [
       {
-        "texte": "",        
-        "url": ""
+        "texte": "Jour 2",        
+        "url": "https://provom.fr/jour-2/"
       },
       {
         "texte": "",
         "url": ""
       }
     ],
-    "maj": "06/10/2026 05:22"
+    "maj": "01/11/2026 20:18"
   },
     "groupe18": {
-    "titre": " ",
+    "titre": "Provom2027 LD J3 Mazaugues(83) 27/02",
     "textes": [
-      "" 
+      "Format : Longue Distance au Classement National" 
     ],
     "liens": [
       {
-        "texte": "",        
-        "url": ""
+        "texte": "Jour 3",        
+        "url": "https://provom.fr/jour-3/"
       },
       {
         "texte": "",
         "url": ""
       }
     ],
-    "maj": "06/10/2026 05:22"
+    "maj": "01/11/2026 20:18"
   },
     "groupe19": {
+    "titre": "Provom2027 MD J4 Mazaugues(83) 27/02",
+    "textes": [
+      "Format : Moyenne Distance au CN"
+
+    ],
+    "liens": [
+      {
+        "texte": "Jour 4",        
+        "url": "https://provom.fr/jour-4/"
+      },
+      {
+        "texte": "",
+        "url": ""
+      }
+    ],
+    "maj": "01/11/2026 20:26"
+  },
+    "groupe20": {
     "titre": " ",
     "textes": [
       ""
-
     ],
     "liens": [
       {
