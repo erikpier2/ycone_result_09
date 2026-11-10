@@ -73,19 +73,20 @@
   },
 
     "groupe4": {
-    "titre": "",
+    "titre": "CO-VTT Challenge Samoisien MD dép. Samois s/S.(77) 28/11",
     "textes": [
-      "",
+      "Au coeur de la forêt de Fontainebleau, l'AS Samois vous invite à vivre une aventure grandeur nature où le sens de l'orientation fait la différence.",
+      "Clôture des inscriptions le 20/11/2026",
       ""
     ],
     "liens": [
       {
-        "texte": "",
-        "url": ""
+        "texte": "Site Web",        
+        "url": "http://www.samois.coursedorientation.fr/"
       },
       {
-        "texte": "",        
-        "url": " "
+        "texte": "Annonce",
+        "url": "https://api.ffcorientation.fr/media/invitations/Aa_SAMOIS__SAMEDI__28_NOV__P1lC9Ne.pdf"
       },
       {
         "texte": "",
@@ -96,7 +97,7 @@
         "url": ""
       }
     ],
-    "maj": "04/10/2026 19:51"
+    "maj": "10/11/2026 08:04"
   },
 
   "groupe5": {
