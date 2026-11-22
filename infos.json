@@ -46,7 +46,7 @@
   },
 
   "groupe3": {
-    "titre": "MD régionale Larchant (77) – 4 octobre",
+    "titre": "MD régionale Larchant (77) – 15 novembre",
     "textes": [
       "Course régionale Moyenne Distance à Larchant(77), 'le rocher de la Dame Jouanne'",
       ""
@@ -165,8 +165,8 @@
       "url": "https://drive.google.com/file/d/1Elr2GHP-gAbG0s1xIutMYYoEuzgtbIR_/view?usp=sharing"
     },
     {
-      "texte": "",
-      "url": ""
+      "texte": "Résultats OrientLive",
+      "url": "https://perrin.alwaysdata.net/co-live/index.html?course_id=27"
     },
     {
       "texte": "",
@@ -205,16 +205,16 @@
         "url": "https://drive.google.com/file/d/1RgZe7EyrGk7A5q67RBb5HkmcBq2S-s2J/view?usp=sharing"
       },
       {
-        "texte": "Répartition des catégories",
-        "url": "https://drive.google.com/file/d/1_mWARaBld0s456gwv3KbDw2k2YGAU9Hp/view?usp=drive_link"
-      },
-      {
-        "texte": "",
-        "url": ""
+        "texte": "Résultats OrientLive",
+        "url": "https://perrin.alwaysdata.net/co-live/index.html?course_id=28"
       },          
       {
         "texte":"",
         "url":""
+      },
+      {
+        "texte": "Répartition des catégories",
+        "url": "https://drive.google.com/file/d/1_mWARaBld0s456gwv3KbDw2k2YGAU9Hp/view?usp=drive_link"
       }
     ],
     "maj": "18/11/2026 08:44"
