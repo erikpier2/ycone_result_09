@@ -2,7 +2,7 @@
 <html lang="fr">
 <!-- chatgpt 03/10/2026 19:37 -->
 <head>
-    <title>Horaires/Résultats YCÔNE septembre 2026</title>
+    <title>Horaires/Résultats CLUB</title>
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0,
@@ -10,7 +10,7 @@
                 user-scalable=yes, viewport-fit=cover">
 
     <meta name="author" content="erikpier">
-
+    <!--<link rel="icon" href="logo-icon.svg" type="image/svg+xml">-->
 <style>
     /* =========================================================
         CONFIGURATION GÉNÉRALE
@@ -483,6 +483,33 @@
         color: var(--texte7) !important;
     }
 
+    .lien-svg {
+        transition: color 0.2s ease, transform 0.2s ease;
+    }
+
+    .lien-svg svg {
+        transition: transform 0.2s ease;
+        border-radius: 5px 5px 5px 5px;
+        border: 1px solid #f0741c;
+    }
+
+    .lien-svg:hover svg {
+        transform: scale(1.25);
+    }
+
+    .lien-image {
+        overflow: hidden;
+    }
+
+    .lien-image img {
+        transition: transform 0.35s ease;
+        border-radius: 8px;
+    }
+
+    .lien-image:hover img {
+        transform: scale(1.25);
+    }
+
     /* =========================================================
         BOUTON INFO ⓘ
     ========================================================= */
@@ -712,8 +739,38 @@
     <h1>
         Agenda YCÔNE 2026 &#8195;&#8195;
         <span style="font-size: 10px;">
-            01/11/2026 au 31/12/2026
-        </span>
+            01/11/2026 au 31/12/2026 &#8195;&#8195;
+            
+            <a  class="lien-svg" 
+            href="https://perrin.alwaysdata.net/co-live/index.html"
+            target="_blank"
+                title="OrientLive"> 
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="26" height="26" role="img" aria-hidden="true">
+                <title>OrientLive</title>
+                <rect width="128" height="128" rx="30" fill="#1D6B43"/>
+                <!-- courbes de niveau -->
+                <ellipse cx="60" cy="74" rx="52" ry="36" fill="none" stroke="#fff" stroke-opacity=".10" stroke-width="2"/>
+                <ellipse cx="60" cy="74" rx="34" ry="22" fill="none" stroke="#fff" stroke-opacity=".10" stroke-width="2"/>
+                <!-- itinéraire jusqu'à la balise -->
+                <path d="M16 108 C 26 98, 24 90, 36 90 S 40 92, 44 88" fill="none" stroke="#fff" stroke-opacity=".85" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="1 8"/>
+                <!-- balise : carré coupé en diagonale, orange et blanc -->
+                <rect x="44" y="44" width="44" height="44" rx="5" fill="#fff"/>
+                <path d="M49 44 H83 A5 5 0 0 1 88 49 V83 Z" fill="#F08A24"/>
+                <rect x="44" y="44" width="44" height="44" rx="5" fill="none" stroke="#fff" stroke-width="3"/>
+                <!-- ondes : direct -->
+                <path d="M88 31 A13 13 0 0 1 101 44" fill="none" stroke="#FFC27A" stroke-width="5" stroke-linecap="round"/>
+                <path d="M88 19 A25 25 0 0 1 113 44" fill="none" stroke="#FFC27A" stroke-width="5" stroke-linecap="round" stroke-opacity=".7"/>
+                </svg>
+            </a>&#8195;&#8195;<!---->
+            <a class="lien-image" 
+            href="https://www.co-live.fr/olive/resultats.php"
+            target="_blank" title="O'Live">
+                <img viewBox="0 0 128 128" width="25" height="25" role="img" aria-hidden="true" 
+                src="https://play-lh.googleusercontent.com/1WkCLuYt-HrnFsMi9wBW3RvkqlGNcJ0wnRkufS904cY2mvr6tXZ4uDpc-LPlw7Bx1g5TW3u5RWKr0Jgk6wlU=w480-h960-rw"
+                alt="O'Live résultats"/>
+            </a>        
+            </span>          
+
     </h1>
     <h2>
         &#8195;
@@ -735,20 +792,22 @@
         <span>
             &#8195;&#8195;&#8195;&#8195;&#8195;
         </span>
-    
-        <!-- La balise <a> rend tout ce qu'elle contient cliquable -->
-        <a id="lienAgenda" href="#" target="_blank" rel="noopener"
-            title="Consulter l'agenda FFCO"> 
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="32" height="32" style="vertical-align: middle; border: 1px solid #ccc;">
-                <!-- Triangle supérieur gauche (Blanc) -->
-                <polygon points="0,0 100,0 0,100" fill="#FFFFFF" />
-                <!-- Triangle inférieur droit (Orange) -->
-                <polygon points="100,0 100,100 0,100" fill="#EE6600" />
-            </svg>
-        </a>
-        Agenda FFCO
-    </h2>
-    </div>
+        <a class="lien-svg" id="lienAgenda" href="#" target="_blank" rel="noopener"
+        title="Consulter l'agenda FFCO"> 
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="32" height="32" style=" border: 1px solid #ccc;">
+            <!-- Triangle supérieur gauche (Blanc) -->
+            <polygon points="0,0 100,0 0,100" fill="#FFFFFF" />
+            <!-- Triangle inférieur droit (Orange) -->
+            <polygon points="100,0 100,100 0,100" fill="#EE6600" />
+        </svg>
+    </a>
+    Agenda FFCO        
+
+
+
+
+</h2>
+</div>
 </header>
 
     
