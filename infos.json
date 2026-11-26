@@ -169,12 +169,12 @@
       "url": "https://perrin.alwaysdata.net/co-live/index.html?course_id=27"
     },
     {
-      "texte": "",
-      "url": ""
+      "texte":"Horaires Sprint",
+      "url":"https://cdco89.fr/wp-content/uploads/2026/11/Horaires-depart-Clubs-Sprint-St-Fargeau-2026.html"
     },
     {
-      "texte":"",
-      "url":""
+      "texte": "Consignes Sprint",
+      "url": "https://cdco89.fr/wp-content/uploads/2026/11/Consignes-course-SPRINT-St-Fargeau-v2.pdf"
     },
     {
       "texte": "",
@@ -185,7 +185,7 @@
       "url": ""
     }
   ],
-  "maj": "02/11/2026 21:23"
+  "maj": "26/11/2026 06:30"
 },
 
 "groupe8": {
@@ -209,15 +209,23 @@
         "url": "https://perrin.alwaysdata.net/co-live/index.html?course_id=28"
       },          
       {
-        "texte":"",
-        "url":""
+        "texte": "Horaires MD",
+        "url": "https://drive.google.com/file/d/19CdL5l1QhSt43dr1KPLEbVLEAGQWbEOt/view?usp=sharing"
       },
       {
-        "texte": "Répartition des catégories",
-        "url": "https://drive.google.com/file/d/1_mWARaBld0s456gwv3KbDw2k2YGAU9Hp/view?usp=drive_link"
+        "texte":"Consignes MD",
+        "url":"https://cdco89.fr/wp-content/uploads/2026/11/Consignes-course-MD-St-Fargeau-v2.pdf"
+      },
+      {
+        "texte": "",
+        "url": ""
+      },            
+      {
+        "texte": "",
+        "url": ""
       }
     ],
-    "maj": "18/11/2026 08:44"
+    "maj": "26/11/2026 06:30"
   },
 
   "groupe9": {
